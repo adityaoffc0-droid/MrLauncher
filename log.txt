@@ -1,0 +1,749 @@
+build	Build Debug .apk	﻿2026-11-23T12:07:57.1786221Z ##[group]Run # Build the launcher
+build	Build Debug .apk	2026-11-23T12:07:57.1786532Z ^[[36;1m# Build the launcher^[[0m
+build	Build Debug .apk	2026-11-23T12:07:57.1786981Z ^[[36;1mgradle :app_mrlauncher:assembleFullDebug^[[0m
+build	Build Debug .apk	2026-11-23T12:07:57.1787502Z ^[[36;1mmv app_mrlauncher/build/outputs/apk/full/debug/app_mrlauncher-full-debug.apk out/app-debug-full.apk^[[0m
+build	Build Debug .apk	2026-11-23T12:07:57.1835582Z shell: /usr/bin/bash -e {0}
+build	Build Debug .apk	2026-11-23T12:07:57.1835834Z env:
+build	Build Debug .apk	2026-11-23T12:07:57.1836049Z   UPLOAD_KEYSTORE_PASSWORD: 
+build	Build Debug .apk	2026-11-23T12:07:57.1836311Z   MOJOPUB_KEYSTORE_PASSWORD: 
+build	Build Debug .apk	2026-11-23T12:07:57.1836561Z   CURSEFORGE_API_KEY: 
+build	Build Debug .apk	2026-11-23T12:07:57.1836824Z   GRADLE_ACTION_ID: gradle/actions/setup-gradle
+build	Build Debug .apk	2026-11-23T12:07:57.1837128Z   GRADLE_USER_HOME: /home/runner/.gradle
+build	Build Debug .apk	2026-11-23T12:07:57.1837420Z   GRADLE_BUILD_ACTION_SETUP_COMPLETED: true
+build	Build Debug .apk	2026-11-23T12:07:57.1837709Z   GRADLE_BUILD_ACTION_CACHE_RESTORED: true
+build	Build Debug .apk	2026-11-23T12:07:57.1838119Z   DEVELOCITY_INJECTION_INIT_SCRIPT_NAME: gradle-actions.inject-develocity.init.gradle
+build	Build Debug .apk	2026-11-23T12:07:57.1838548Z   DEVELOCITY_INJECTION_CUSTOM_VALUE: gradle-actions
+build	Build Debug .apk	2026-11-23T12:07:57.1838895Z   GITHUB_DEPENDENCY_GRAPH_ENABLED: false
+build	Build Debug .apk	2026-11-23T12:07:57.1839260Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.21-9/x64
+build	Build Debug .apk	2026-11-23T12:07:57.1839695Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.21-9/x64
+build	Build Debug .apk	2026-11-23T12:07:57.1840045Z ##[endgroup]
+build	Build Debug .apk	2026-11-23T12:07:58.2066274Z Starting a Gradle Daemon (subsequent builds will be faster)
+build	Build Debug .apk	2026-11-23T12:07:59.9064663Z Configuration on demand is an incubating feature.
+build	Build Debug .apk	2026-11-23T12:08:11.8068511Z 
+build	Build Debug .apk	2026-11-23T12:08:11.8074105Z > Configure project :app_mrlauncher
+build	Build Debug .apk	2026-11-23T12:08:11.8094006Z WARNING: BuildType 'proguard' is both debuggable and has 'isMinifyEnabled' set to true.
+build	Build Debug .apk	2026-11-23T12:08:11.8094907Z All code optimizations and obfuscation are disabled for debuggable builds.
+build	Build Debug .apk	2026-11-23T12:08:11.8095729Z WARNING: BuildType 'proguard' is both debuggable and has 'isMinifyEnabled' set to true.
+build	Build Debug .apk	2026-11-23T12:08:11.8113873Z All code optimizations and obfuscation are disabled for debuggable builds.
+build	Build Debug .apk	2026-11-23T12:08:20.5064568Z 
+build	Build Debug .apk	2026-11-23T12:08:20.5083761Z > Task :forge_installer:compileJava
+build	Build Debug .apk	2026-11-23T12:08:20.5085653Z > Task :forge_installer:processResources NO-SOURCE
+build	Build Debug .apk	2026-11-23T12:08:20.5090023Z > Task :forge_installer:classes
+build	Build Debug .apk	2026-11-23T12:08:20.6039136Z > Task :forge_installer:jar
+build	Build Debug .apk	2026-11-23T12:08:20.6045039Z > Task :forge_installer:assemble
+build	Build Debug .apk	2026-11-23T12:08:20.6063435Z > Task :app_mrlauncher:copyProjectJarforge_installerFullDebug
+build	Build Debug .apk	2026-11-23T12:08:20.8037359Z > Task :NoBlocklist:compileJava
+build	Build Debug .apk	2026-11-23T12:08:20.8053626Z > Task :NoBlocklist:processResources NO-SOURCE
+build	Build Debug .apk	2026-11-23T12:08:20.8073514Z > Task :NoBlocklist:classes
+build	Build Debug .apk	2026-11-23T12:08:20.8093594Z > Task :NoBlocklist:jar SKIPPED
+build	Build Debug .apk	2026-11-23T12:08:20.8107958Z > Task :NoBlocklist:compileTestJava NO-SOURCE
+build	Build Debug .apk	2026-11-23T12:08:21.4034721Z > Task :NoBlocklist:shadowJar
+build	Build Debug .apk	2026-11-23T12:08:21.4053867Z > Task :NoBlocklist:assemble
+build	Build Debug .apk	2026-11-23T12:08:21.4073714Z > Task :app_mrlauncher:copyProjectJarnoblocklistFullDebug
+build	Build Debug .apk	2026-11-23T12:08:21.6037396Z 
+build	Build Debug .apk	2026-11-23T12:08:21.6063882Z > Task :app_mrlauncher:downloadcaciocavallo17cacio-ttaFullDebug
+build	Build Debug .apk	2026-11-23T12:08:21.6071045Z Download https://jitpack.io/com/github/MojoLauncher/caciocavallo17/cacio-tta/-411454b006-1/cacio-tta--411454b006-1-jar-with-dependencies.jar
+build	Build Debug .apk	2026-11-23T12:08:21.6101831Z 
+build	Build Debug .apk	2026-11-23T12:08:21.6108439Z > Task :app_mrlauncher:downloadcaciocavallocacio-androidnwFullDebug
+build	Build Debug .apk	2026-11-23T12:08:21.6129449Z Download https://jitpack.io/com/github/MojoLauncher/caciocavallo/cacio-androidnw/d0efb5aaba/cacio-androidnw-d0efb5aaba.jar
+build	Build Debug .apk	2026-11-23T12:08:21.6136694Z 
+build	Build Debug .apk	2026-11-23T12:08:21.6153775Z > Task :app_mrlauncher:preBuild UP-TO-DATE
+build	Build Debug .apk	2026-11-23T12:08:21.7040497Z 
+build	Build Debug .apk	2026-11-23T12:08:21.7077150Z > Task :app_mrlauncher:downloadcaciocavallocacio-sharedFullDebug
+build	Build Debug .apk	2026-11-23T12:08:21.7094230Z Download https://jitpack.io/com/github/MojoLauncher/caciocavallo/cacio-shared/d0efb5aaba/cacio-shared-d0efb5aaba.jar
+build	Build Debug .apk	2026-11-23T12:08:21.7113641Z 
+build	Build Debug .apk	2026-11-23T12:08:21.7123744Z > Task :glfw:jni_bindings:preBuild UP-TO-DATE
+build	Build Debug .apk	2026-11-23T12:08:21.7133688Z > Task :glfw:jni_bindings:preDebugBuild UP-TO-DATE
+build	Build Debug .apk	2026-11-23T12:08:21.7153745Z > Task :glfw:jni_bindings:writeDebugAarMetadata
+build	Build Debug .apk	2026-11-23T12:08:21.7167886Z > Task :mojoexec:jni_bindings:preBuild UP-TO-DATE
+build	Build Debug .apk	2026-11-23T12:08:21.7193709Z > Task :mojoexec:jni_bindings:preDebugBuild UP-TO-DATE
+build	Build Debug .apk	2026-11-23T12:08:21.7200790Z > Task :mojoexec:jni_bindings:writeDebugAarMetadata
+build	Build Debug .apk	2026-11-23T12:08:21.7213540Z > Task :sdl:jni_bindings:preBuild UP-TO-DATE
+build	Build Debug .apk	2026-11-23T12:08:21.7230164Z > Task :sdl:jni_bindings:preDebugBuild UP-TO-DATE
+build	Build Debug .apk	2026-11-23T12:08:21.8048877Z > Task :sdl:jni_bindings:writeDebugAarMetadata
+build	Build Debug .apk	2026-11-23T12:08:21.8073890Z > Task :glfw:jni_bindings:generateDebugResValues
+build	Build Debug .apk	2026-11-23T12:08:21.8074782Z > Task :glfw:jni_bindings:generateDebugResources
+build	Build Debug .apk	2026-11-23T12:08:22.1060642Z > Task :glfw:jni_bindings:packageDebugResources
+build	Build Debug .apk	2026-11-23T12:08:22.1073477Z > Task :mojoexec:jni_bindings:generateDebugResValues
+build	Build Debug .apk	2026-11-23T12:08:22.1088303Z > Task :mojoexec:jni_bindings:generateDebugResources
+build	Build Debug .apk	2026-11-23T12:08:22.1129670Z > Task :mojoexec:jni_bindings:packageDebugResources
+build	Build Debug .apk	2026-11-23T12:08:22.1148416Z > Task :sdl:jni_bindings:generateDebugResValues
+build	Build Debug .apk	2026-11-23T12:08:22.1179305Z > Task :sdl:jni_bindings:generateDebugResources
+build	Build Debug .apk	2026-11-23T12:08:22.2064275Z > Task :sdl:jni_bindings:packageDebugResources
+build	Build Debug .apk	2026-11-23T12:08:22.2068849Z > Task :glfw:jni_bindings:extractDeepLinksDebug
+build	Build Debug .apk	2026-11-23T12:08:22.3334812Z > Task :glfw:jni_bindings:processDebugManifest
+build	Build Debug .apk	2026-11-23T12:08:22.3335507Z > Task :mojoexec:jni_bindings:extractDeepLinksDebug
+build	Build Debug .apk	2026-11-23T12:08:22.4294400Z > Task :mojoexec:jni_bindings:processDebugManifest
+build	Build Debug .apk	2026-11-23T12:08:22.4315479Z > Task :sdl:jni_bindings:extractDeepLinksDebug
+build	Build Debug .apk	2026-11-23T12:08:22.4499321Z > Task :sdl:jni_bindings:processDebugManifest
+build	Build Debug .apk	2026-11-23T12:08:22.5244695Z > Task :glfw:jni_bindings:compileDebugLibraryResources
+build	Build Debug .apk	2026-11-23T12:08:22.6218348Z > Task :glfw:jni_bindings:parseDebugLocalResources
+build	Build Debug .apk	2026-11-23T12:08:22.7255477Z > Task :mojoexec:jni_bindings:parseDebugLocalResources
+build	Build Debug .apk	2026-11-23T12:08:22.8312151Z > Task :mojoexec:jni_bindings:generateDebugRFile
+build	Build Debug .apk	2026-11-23T12:08:22.9274745Z > Task :glfw:jni_bindings:generateDebugRFile
+build	Build Debug .apk	2026-11-23T12:08:22.9293798Z > Task :mojoexec:jni_bindings:compileDebugLibraryResources
+build	Build Debug .apk	2026-11-23T12:08:22.9515117Z > Task :sdl:jni_bindings:compileDebugLibraryResources
+build	Build Debug .apk	2026-11-23T12:08:22.9516207Z > Task :sdl:jni_bindings:parseDebugLocalResources
+build	Build Debug .apk	2026-11-23T12:08:23.0264703Z > Task :sdl:jni_bindings:generateDebugRFile
+build	Build Debug .apk	2026-11-23T12:08:23.0265835Z > Task :glfw:jni_bindings:javaPreCompileDebug
+build	Build Debug .apk	2026-11-23T12:08:23.0600570Z > Task :mojoexec:jni_bindings:javaPreCompileDebug
+build	Build Debug .apk	2026-11-23T12:08:23.6237545Z 
+build	Build Debug .apk	2026-11-23T12:08:23.6238292Z > Task :app_mrlauncher:downloadComponentRuntime8FullDebug
+build	Build Debug .apk	2026-11-23T12:08:23.6434907Z Download https://github.com/MojoLauncher/android-openjdk-build-multiarch/releases/download/rolling/jre8-pojav.zip
+build	Build Debug .apk	2026-11-23T12:08:28.6053708Z 
+build	Build Debug .apk	2026-11-23T12:08:28.6073904Z > Task :mojoexec:jni_bindings:compileDebugJavaWithJavac
+build	Build Debug .apk	2026-11-23T12:08:28.8034543Z > Task :app_mrlauncher:unzipComponentRuntime8FullDebug
+build	Build Debug .apk	2026-11-23T12:08:28.8063853Z > Task :app_mrlauncher:preFullDebugBuild
+build	Build Debug .apk	2026-11-23T12:08:28.8073181Z > Task :app_mrlauncher:mergeFullDebugNativeDebugMetadata NO-SOURCE
+build	Build Debug .apk	2026-11-23T12:08:28.8083704Z > Task :app_mrlauncher:generateFullDebugBuildConfig
+build	Build Debug .apk	2026-11-23T12:08:28.9042583Z > Task :app_mrlauncher:javaPreCompileFullDebug
+build	Build Debug .apk	2026-11-23T12:08:33.3058140Z > Task :app_mrlauncher:checkFullDebugAarMetadata
+build	Build Debug .apk	2026-11-23T12:08:33.3073912Z > Task :app_mrlauncher:generateFullDebugResValues
+build	Build Debug .apk	2026-11-23T12:08:33.7054471Z > Task :app_mrlauncher:mapFullDebugSourceSetPaths
+build	Build Debug .apk	2026-11-23T12:08:33.7070277Z > Task :app_mrlauncher:generateFullDebugResources
+build	Build Debug .apk	2026-11-23T12:08:36.6054223Z > Task :app_mrlauncher:createFullDebugCompatibleScreenManifests
+build	Build Debug .apk	2026-11-23T12:08:36.6093728Z > Task :app_mrlauncher:extractDeepLinksFullDebug
+build	Build Debug .apk	2026-11-23T12:08:36.9053616Z 
+build	Build Debug .apk	2026-11-23T12:08:36.9093909Z > Task :app_mrlauncher:mergeFullDebugResources
+build	Build Debug .apk	2026-11-23T12:08:36.9095923Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values/strings.xml:20:4: Multiple substitutions specified in non-positional format of string resource string/address_memory_warning_msg. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.0085146Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values/strings.xml:551:4: Multiple substitutions specified in non-positional format of string resource string/bind_process_waiting_joystick. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.0088236Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values/strings.xml:492:4: Multiple substitutions specified in non-positional format of string resource string/downloading_java_runtime_platform. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.0135104Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values/strings.xml:562:4: Multiple substitutions specified in non-positional format of string resource string/downloading_java_runtime_uni. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.0154734Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values/strings.xml:181:4: Multiple substitutions specified in non-positional format of string resource string/mcl_launch_downloading_progress. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.0174596Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values/strings.xml:277:4: Multiple substitutions specified in non-positional format of string resource string/memory_warning_msg. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.0215015Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values/strings.xml:542:4: Multiple substitutions specified in non-positional format of string resource string/mjdl_native_error_subtitle_1. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.0246387Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values/strings.xml:346:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_applying_overrides. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.0314505Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values/strings.xml:347:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_metadata. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.0317151Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values/strings.xml:348:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_mods. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.0319699Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values/strings.xml:354:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_mods_fc. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.0322277Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values/strings.xml:393:4: Multiple substitutions specified in non-positional format of string resource string/newdl_downloading_game_files. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.0324865Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values/strings.xml:391:4: Multiple substitutions specified in non-positional format of string resource string/newdl_downloading_game_files_size. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.0327360Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values/strings.xml:390:4: Multiple substitutions specified in non-positional format of string resource string/newdl_extracting_native_libraries. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.0330288Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values/strings.xml:469:4: Multiple substitutions specified in non-positional format of string resource string/newerdl_downloading_files_count. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.0332911Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values/strings.xml:466:4: Multiple substitutions specified in non-positional format of string resource string/newerdl_downloading_files_size. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.0395819Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values/strings.xml:491:4: Multiple substitutions specified in non-positional format of string resource string/newerdl_inserting_metadata_count. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.1125271Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-hi/strings.xml:20:4: Multiple substitutions specified in non-positional format of string resource string/address_memory_warning_msg. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.1154933Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-hi/strings.xml:173:4: Multiple substitutions specified in non-positional format of string resource string/mcl_launch_downloading_progress. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.1204624Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-hi/strings.xml:266:4: Multiple substitutions specified in non-positional format of string resource string/memory_warning_msg. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.1244599Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-hi/strings.xml:330:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_applying_overrides. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.1284629Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-hi/strings.xml:331:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_metadata. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.1304631Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-hi/strings.xml:332:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_mods. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.1364652Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-hi/strings.xml:338:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_mods_fc. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.1404562Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-hi/strings.xml:373:4: Multiple substitutions specified in non-positional format of string resource string/newdl_downloading_game_files. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.1444618Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-hi/strings.xml:371:4: Multiple substitutions specified in non-positional format of string resource string/newdl_downloading_game_files_size. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.1486107Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-hi/strings.xml:370:4: Multiple substitutions specified in non-positional format of string resource string/newdl_extracting_native_libraries. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.3055476Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-fil/strings.xml:119:4: Multiple substitutions specified in non-positional format of string resource string/mcl_launch_downloading_progress. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.3074798Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-fil/strings.xml:122:4: Multiple substitutions specified in non-positional format of string resource string/memory_warning_msg. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.3114674Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-hu/strings.xml:29:4: Multiple substitutions specified in non-positional format of string resource string/mcl_launch_downloading_progress. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.3154564Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-hu/strings.xml:134:4: Multiple substitutions specified in non-positional format of string resource string/memory_warning_msg. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.4445217Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-lol-rAA/strings.xml:144:4: Multiple substitutions specified in non-positional format of string resource string/mcl_launch_downloading_progress. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.4484648Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-lol-rAA/strings.xml:225:4: Multiple substitutions specified in non-positional format of string resource string/memory_warning_msg. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.4855171Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-lol-rAA/strings.xml:272:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_applying_overrides. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.5215778Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-lol-rAA/strings.xml:273:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_metadata. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.5551082Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-lol-rAA/strings.xml:274:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_mods. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.5604774Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-lol-rAA/strings.xml:280:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_mods_fc. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.5998785Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-af/strings.xml:32:4: Multiple substitutions specified in non-positional format of string resource string/mcl_launch_downloading_progress. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.6158792Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-it/strings.xml:13:4: Multiple substitutions specified in non-positional format of string resource string/address_memory_warning_msg. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.6366170Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-it/strings.xml:147:4: Multiple substitutions specified in non-positional format of string resource string/mcl_launch_downloading_progress. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.6479795Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-it/strings.xml:231:4: Multiple substitutions specified in non-positional format of string resource string/memory_warning_msg. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.6482261Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-it/strings.xml:279:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_applying_overrides. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.6514818Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-it/strings.xml:280:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_metadata. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.6765279Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-it/strings.xml:281:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_mods. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.6953669Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-it/strings.xml:287:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_mods_fc. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.6984817Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-it/strings.xml:322:4: Multiple substitutions specified in non-positional format of string resource string/newdl_downloading_game_files. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7255714Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-it/strings.xml:320:4: Multiple substitutions specified in non-positional format of string resource string/newdl_downloading_game_files_size. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7266684Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-iw/strings.xml:137:4: Multiple substitutions specified in non-positional format of string resource string/mcl_launch_downloading_progress. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7470520Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-iw/strings.xml:214:4: Multiple substitutions specified in non-positional format of string resource string/memory_warning_msg. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7472915Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-ar/strings.xml:14:4: Multiple substitutions specified in non-positional format of string resource string/address_memory_warning_msg. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7475273Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-ar/strings.xml:148:4: Multiple substitutions specified in non-positional format of string resource string/mcl_launch_downloading_progress. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7477568Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-ar/strings.xml:232:4: Multiple substitutions specified in non-positional format of string resource string/memory_warning_msg. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7494369Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-ar/strings.xml:280:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_applying_overrides. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7497047Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-ar/strings.xml:281:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_metadata. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7499554Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-ar/strings.xml:282:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_mods. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7501993Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-ar/strings.xml:288:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_mods_fc. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7515287Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-ar/strings.xml:320:4: Multiple substitutions specified in non-positional format of string resource string/newdl_downloading_game_files. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7517669Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-ar/strings.xml:318:4: Multiple substitutions specified in non-positional format of string resource string/newdl_downloading_game_files_size. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7520072Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-pt/strings.xml:144:4: Multiple substitutions specified in non-positional format of string resource string/mcl_launch_downloading_progress. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7522430Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-pt/strings.xml:149:4: Multiple substitutions specified in non-positional format of string resource string/memory_warning_msg. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7524913Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-ja/strings.xml:129:4: Multiple substitutions specified in non-positional format of string resource string/mcl_launch_downloading_progress. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7527245Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-ja/strings.xml:198:4: Multiple substitutions specified in non-positional format of string resource string/memory_warning_msg. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7529578Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-ro/strings.xml:123:4: Multiple substitutions specified in non-positional format of string resource string/mcl_launch_downloading_progress. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7531883Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-ro/strings.xml:176:4: Multiple substitutions specified in non-positional format of string resource string/memory_warning_msg. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7564454Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-ru/strings.xml:9:4: Multiple substitutions specified in non-positional format of string resource string/address_memory_warning_msg. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7567004Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-ru/strings.xml:415:4: Multiple substitutions specified in non-positional format of string resource string/downloading_java_runtime_platform. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7569527Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-ru/strings.xml:485:4: Multiple substitutions specified in non-positional format of string resource string/downloading_java_runtime_uni. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7572023Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-ru/strings.xml:133:4: Multiple substitutions specified in non-positional format of string resource string/mcl_launch_downloading_progress. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7574475Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-ru/strings.xml:222:4: Multiple substitutions specified in non-positional format of string resource string/memory_warning_msg. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7576831Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-ru/strings.xml:465:4: Multiple substitutions specified in non-positional format of string resource string/mjdl_native_error_subtitle_1. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7579757Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-ru/strings.xml:282:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_applying_overrides. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7582324Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-ru/strings.xml:283:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_metadata. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7605099Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-ru/strings.xml:284:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_mods. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7607680Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-ru/strings.xml:290:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_mods_fc. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7610160Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-ru/strings.xml:327:4: Multiple substitutions specified in non-positional format of string resource string/newdl_downloading_game_files. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7612579Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-ru/strings.xml:325:4: Multiple substitutions specified in non-positional format of string resource string/newdl_downloading_game_files_size. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7615133Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-ru/strings.xml:324:4: Multiple substitutions specified in non-positional format of string resource string/newdl_extracting_native_libraries. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7617571Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-ru/strings.xml:392:4: Multiple substitutions specified in non-positional format of string resource string/newerdl_downloading_files_count. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7619985Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-ru/strings.xml:389:4: Multiple substitutions specified in non-positional format of string resource string/newerdl_downloading_files_size. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7622388Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-ru/strings.xml:414:4: Multiple substitutions specified in non-positional format of string resource string/newerdl_inserting_metadata_count. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7637544Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-mn-rMN/strings.xml:32:4: Multiple substitutions specified in non-positional format of string resource string/mcl_launch_downloading_progress. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7640055Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-ca/strings.xml:32:4: Multiple substitutions specified in non-positional format of string resource string/mcl_launch_downloading_progress. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7642527Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-ca/strings.xml:180:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_applying_overrides. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7655304Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-ca/strings.xml:186:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_mods_fc. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7658231Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-in/strings.xml:13:4: Multiple substitutions specified in non-positional format of string resource string/address_memory_warning_msg. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7660618Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-sr/strings.xml:111:4: Multiple substitutions specified in non-positional format of string resource string/mcl_launch_downloading_progress. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7683372Z /home/runner/.gradle/caches/8.14.5/transforms/2a3c5b93037c9e2879f3cd993fa4694e/transformed/preference-1.2.1/res/values-sr/values-sr.xml:4:4: Multiple substitutions specified in non-positional format of string resource string/memory_warning_msg. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7686082Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-in/strings.xml:147:4: Multiple substitutions specified in non-positional format of string resource string/mcl_launch_downloading_progress. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7688553Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-sk-rSK/strings.xml:144:4: Multiple substitutions specified in non-positional format of string resource string/mcl_launch_downloading_progress. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7690954Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-sk-rSK/strings.xml:225:4: Multiple substitutions specified in non-positional format of string resource string/memory_warning_msg. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7693511Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-sk-rSK/strings.xml:272:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_applying_overrides. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7696024Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-sk-rSK/strings.xml:273:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_metadata. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7698518Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-sk-rSK/strings.xml:274:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_mods. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7701015Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-sk-rSK/strings.xml:280:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_mods_fc. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7723651Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-in/strings.xml:231:4: Multiple substitutions specified in non-positional format of string resource string/memory_warning_msg. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7726142Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-in/strings.xml:279:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_applying_overrides. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7728629Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-in/strings.xml:280:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_metadata. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7731081Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-in/strings.xml:281:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_mods. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7734106Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-in/strings.xml:287:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_mods_fc. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7736552Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-in/strings.xml:322:4: Multiple substitutions specified in non-positional format of string resource string/newdl_downloading_game_files. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7738958Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-in/strings.xml:320:4: Multiple substitutions specified in non-positional format of string resource string/newdl_downloading_game_files_size. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7741376Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-sv/strings.xml:66:4: Multiple substitutions specified in non-positional format of string resource string/mcl_launch_downloading_progress. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7763935Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-sv/strings.xml:68:4: Multiple substitutions specified in non-positional format of string resource string/memory_warning_msg. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7766419Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-ko/strings.xml:145:4: Multiple substitutions specified in non-positional format of string resource string/mcl_launch_downloading_progress. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7768823Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-ko/strings.xml:228:4: Multiple substitutions specified in non-positional format of string resource string/memory_warning_msg. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7771198Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-ko/strings.xml:275:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_applying_overrides. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7773815Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-ko/strings.xml:276:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_metadata. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7776282Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-ko/strings.xml:277:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_mods. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7778749Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-ko/strings.xml:283:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_mods_fc. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7781187Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-bn-rBD/strings.xml:20:4: Multiple substitutions specified in non-positional format of string resource string/address_memory_warning_msg. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7803831Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-bn-rBD/strings.xml:179:4: Multiple substitutions specified in non-positional format of string resource string/mcl_launch_downloading_progress. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7806632Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-bn-rBD/strings.xml:269:4: Multiple substitutions specified in non-positional format of string resource string/memory_warning_msg. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7809247Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-bn-rBD/strings.xml:324:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_applying_overrides. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7811771Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-bn-rBD/strings.xml:325:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_metadata. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7814219Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-bn-rBD/strings.xml:326:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_mods. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7816662Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-bn-rBD/strings.xml:332:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_mods_fc. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7819042Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-bn-rBD/strings.xml:369:4: Multiple substitutions specified in non-positional format of string resource string/newdl_downloading_game_files. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7821412Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-bn-rBD/strings.xml:367:4: Multiple substitutions specified in non-positional format of string resource string/newdl_downloading_game_files_size. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7844055Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-bn-rBD/strings.xml:366:4: Multiple substitutions specified in non-positional format of string resource string/newdl_extracting_native_libraries. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7846596Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-pt-rBR/strings.xml:13:4: Multiple substitutions specified in non-positional format of string resource string/address_memory_warning_msg. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7849005Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-pt-rBR/strings.xml:147:4: Multiple substitutions specified in non-positional format of string resource string/mcl_launch_downloading_progress. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7851332Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-pt-rBR/strings.xml:231:4: Multiple substitutions specified in non-positional format of string resource string/memory_warning_msg. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7853809Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-pt-rBR/strings.xml:279:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_applying_overrides. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7856244Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-pt-rBR/strings.xml:280:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_metadata. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.7858644Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-pt-rBR/strings.xml:281:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_mods. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.8174248Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-pt-rBR/strings.xml:287:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_mods_fc. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.8549094Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-pt-rBR/strings.xml:322:4: Multiple substitutions specified in non-positional format of string resource string/newdl_downloading_game_files. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.8552073Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-pt-rBR/strings.xml:320:4: Multiple substitutions specified in non-positional format of string resource string/newdl_downloading_game_files_size. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.8755885Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-cs/strings.xml:14:4: Multiple substitutions specified in non-positional format of string resource string/address_memory_warning_msg. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.8758543Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-cs/strings.xml:148:4: Multiple substitutions specified in non-positional format of string resource string/mcl_launch_downloading_progress. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.8760990Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-cs/strings.xml:232:4: Multiple substitutions specified in non-positional format of string resource string/memory_warning_msg. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.8763526Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-cs/strings.xml:280:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_applying_overrides. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.8766044Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-cs/strings.xml:281:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_metadata. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.8768541Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-cs/strings.xml:282:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_mods. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.8770984Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-cs/strings.xml:288:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_mods_fc. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.8806370Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-cs/strings.xml:323:4: Multiple substitutions specified in non-positional format of string resource string/newdl_downloading_game_files. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.8809031Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-cs/strings.xml:321:4: Multiple substitutions specified in non-positional format of string resource string/newdl_downloading_game_files_size. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.9295334Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-ba/strings.xml:32:4: Multiple substitutions specified in non-positional format of string resource string/mcl_launch_downloading_progress. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.9324157Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-kk/strings.xml:32:4: Multiple substitutions specified in non-positional format of string resource string/mcl_launch_downloading_progress. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:37.9745224Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-fa-rIR/strings.xml:140:4: Multiple substitutions specified in non-positional format of string resource string/mcl_launch_downloading_progress. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.0161909Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-fa-rIR/strings.xml:238:4: Multiple substitutions specified in non-positional format of string resource string/memory_warning_msg. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.0546246Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-fa-rIR/strings.xml:235:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_applying_overrides. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.0945428Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-fa-rIR/strings.xml:236:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_metadata. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.1216701Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-fa-rIR/strings.xml:237:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_mods. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.1283692Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-fa-rIR/strings.xml:243:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_mods_fc. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.1686093Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-th/strings.xml:145:4: Multiple substitutions specified in non-positional format of string resource string/mcl_launch_downloading_progress. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.1724497Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-th/strings.xml:228:4: Multiple substitutions specified in non-positional format of string resource string/memory_warning_msg. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.1744467Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-th/strings.xml:275:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_applying_overrides. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.1747097Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-th/strings.xml:276:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_metadata. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.1749684Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-th/strings.xml:277:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_mods. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.1752251Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-th/strings.xml:283:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_mods_fc. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.1754774Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-da/strings.xml:21:4: Multiple substitutions specified in non-positional format of string resource string/mcl_launch_downloading_progress. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.1794438Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-tt/strings.xml:105:4: Multiple substitutions specified in non-positional format of string resource string/mcl_launch_downloading_progress. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.1812774Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-de/strings.xml:14:4: Multiple substitutions specified in non-positional format of string resource string/address_memory_warning_msg. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.1854470Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-de/strings.xml:148:4: Multiple substitutions specified in non-positional format of string resource string/mcl_launch_downloading_progress. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.1874437Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-de/strings.xml:232:4: Multiple substitutions specified in non-positional format of string resource string/memory_warning_msg. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.1905984Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-de/strings.xml:280:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_applying_overrides. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.1944604Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-de/strings.xml:281:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_metadata. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.1964375Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-de/strings.xml:282:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_mods. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.1984540Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-de/strings.xml:288:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_mods_fc. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2024456Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-de/strings.xml:323:4: Multiple substitutions specified in non-positional format of string resource string/newdl_downloading_game_files. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2064666Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-de/strings.xml:321:4: Multiple substitutions specified in non-positional format of string resource string/newdl_downloading_game_files_size. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2104550Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-lt/strings.xml:134:4: Multiple substitutions specified in non-positional format of string resource string/mcl_launch_downloading_progress. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2174534Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-lt/strings.xml:198:4: Multiple substitutions specified in non-positional format of string resource string/memory_warning_msg. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2236159Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-tr/strings.xml:145:4: Multiple substitutions specified in non-positional format of string resource string/mcl_launch_downloading_progress. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2246376Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-tr/strings.xml:228:4: Multiple substitutions specified in non-positional format of string resource string/memory_warning_msg. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2294480Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-lt/strings.xml:225:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_applying_overrides. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2314597Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-lt/strings.xml:229:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_mods_fc. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2334428Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-tr/strings.xml:275:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_applying_overrides. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2354471Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-tr/strings.xml:276:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_metadata. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2383806Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-tr/strings.xml:277:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_mods. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2414602Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-tr/strings.xml:283:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_mods_fc. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2454638Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-uk/strings.xml:146:4: Multiple substitutions specified in non-positional format of string resource string/mcl_launch_downloading_progress. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2474324Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-uk/strings.xml:230:4: Multiple substitutions specified in non-positional format of string resource string/memory_warning_msg. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2476804Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-uk/strings.xml:288:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_applying_overrides. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2479392Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-uk/strings.xml:289:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_metadata. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2481874Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-uk/strings.xml:290:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_mods. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2485125Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-uk/strings.xml:296:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_mods_fc. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2488035Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-uk/strings.xml:344:4: Multiple substitutions specified in non-positional format of string resource string/newdl_downloading_game_files. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2490495Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-uk/strings.xml:330:4: Multiple substitutions specified in non-positional format of string resource string/newdl_downloading_game_files_size. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2533691Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-uk/strings.xml:329:4: Multiple substitutions specified in non-positional format of string resource string/newdl_extracting_native_libraries. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2536682Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-uk/strings.xml:215:4: Multiple substitutions specified in non-positional format of string resource string/newerdl_inserting_metadata_count. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2539044Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-et-rEE/strings.xml:146:4: Multiple substitutions specified in non-positional format of string resource string/memory_warning_msg. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2541449Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-el/strings.xml:145:4: Multiple substitutions specified in non-positional format of string resource string/mcl_launch_downloading_progress. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2546477Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-el/strings.xml:228:4: Multiple substitutions specified in non-positional format of string resource string/memory_warning_msg. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2548865Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-el/strings.xml:275:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_applying_overrides. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2551345Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-el/strings.xml:276:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_metadata. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2602542Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-el/strings.xml:277:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_mods. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2605391Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-el/strings.xml:283:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_mods_fc. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2607896Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-ms/strings.xml:113:4: Multiple substitutions specified in non-positional format of string resource string/mcl_launch_downloading_progress. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2610337Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-vi/strings.xml:19:4: Multiple substitutions specified in non-positional format of string resource string/address_memory_warning_msg. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2612736Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-ms/strings.xml:116:4: Multiple substitutions specified in non-positional format of string resource string/memory_warning_msg. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2615297Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-zh-rTW/strings.xml:13:4: Multiple substitutions specified in non-positional format of string resource string/address_memory_warning_msg. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2617841Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-vi/strings.xml:170:4: Multiple substitutions specified in non-positional format of string resource string/mcl_launch_downloading_progress. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2620792Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-vi/strings.xml:261:4: Multiple substitutions specified in non-positional format of string resource string/memory_warning_msg. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2660140Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-vi/strings.xml:323:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_applying_overrides. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2662907Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-vi/strings.xml:324:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_metadata. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2665554Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-vi/strings.xml:325:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_mods. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2668048Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-vi/strings.xml:331:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_mods_fc. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2670451Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-vi/strings.xml:369:4: Multiple substitutions specified in non-positional format of string resource string/newdl_downloading_game_files. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2672874Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-zh-rTW/strings.xml:147:4: Multiple substitutions specified in non-positional format of string resource string/mcl_launch_downloading_progress. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2675398Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-zh-rTW/strings.xml:231:4: Multiple substitutions specified in non-positional format of string resource string/memory_warning_msg. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2677817Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-zh-rTW/strings.xml:279:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_applying_overrides. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2680334Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-zh-rTW/strings.xml:280:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_metadata. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2682780Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-zh-rTW/strings.xml:281:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_mods. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2735702Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-zh-rTW/strings.xml:287:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_mods_fc. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2738263Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-zh-rTW/strings.xml:322:4: Multiple substitutions specified in non-positional format of string resource string/newdl_downloading_game_files. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2740816Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-zh-rTW/strings.xml:320:4: Multiple substitutions specified in non-positional format of string resource string/newdl_downloading_game_files_size. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2743759Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-vi/strings.xml:367:4: Multiple substitutions specified in non-positional format of string resource string/newdl_downloading_game_files_size. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2746119Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-vi/strings.xml:366:4: Multiple substitutions specified in non-positional format of string resource string/newdl_extracting_native_libraries. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2748332Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-es/strings.xml:13:4: Multiple substitutions specified in non-positional format of string resource string/address_memory_warning_msg. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2750639Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-es/strings.xml:147:4: Multiple substitutions specified in non-positional format of string resource string/mcl_launch_downloading_progress. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2793610Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-nl/strings.xml:144:4: Multiple substitutions specified in non-positional format of string resource string/mcl_launch_downloading_progress. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2796213Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-nl/strings.xml:229:4: Multiple substitutions specified in non-positional format of string resource string/memory_warning_msg. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2798744Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-nl/strings.xml:226:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_applying_overrides. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2801277Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-nl/strings.xml:227:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_metadata. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2803949Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-nl/strings.xml:228:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_mods. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2806328Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-es/strings.xml:231:4: Multiple substitutions specified in non-positional format of string resource string/memory_warning_msg. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2808803Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-es/strings.xml:279:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_applying_overrides. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2811304Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-es/strings.xml:280:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_metadata. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2854211Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-es/strings.xml:281:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_mods. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2856999Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-es/strings.xml:287:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_mods_fc. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2860012Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-es/strings.xml:322:4: Multiple substitutions specified in non-positional format of string resource string/newdl_downloading_game_files. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2862564Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-es/strings.xml:320:4: Multiple substitutions specified in non-positional format of string resource string/newdl_downloading_game_files_size. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2865124Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-nl/strings.xml:234:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_mods_fc. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2867557Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-no/strings.xml:95:4: Multiple substitutions specified in non-positional format of string resource string/mcl_launch_downloading_progress. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2869910Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-no/strings.xml:97:4: Multiple substitutions specified in non-positional format of string resource string/memory_warning_msg. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2872278Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-zh-rCN/strings.xml:13:4: Multiple substitutions specified in non-positional format of string resource string/address_memory_warning_msg. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2915317Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-zh-rCN/strings.xml:147:4: Multiple substitutions specified in non-positional format of string resource string/mcl_launch_downloading_progress. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2917857Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-zh-rCN/strings.xml:231:4: Multiple substitutions specified in non-positional format of string resource string/memory_warning_msg. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2920240Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-zh-rCN/strings.xml:279:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_applying_overrides. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2922827Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-zh-rCN/strings.xml:280:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_metadata. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2925642Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-zh-rCN/strings.xml:281:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_mods. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2928190Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-zh-rCN/strings.xml:287:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_mods_fc. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2930706Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-zh-rCN/strings.xml:322:4: Multiple substitutions specified in non-positional format of string resource string/newdl_downloading_game_files. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.2973793Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-zh-rCN/strings.xml:320:4: Multiple substitutions specified in non-positional format of string resource string/newdl_downloading_game_files_size. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.3050164Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-fr/strings.xml:14:4: Multiple substitutions specified in non-positional format of string resource string/address_memory_warning_msg. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.3104757Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-fr/strings.xml:148:4: Multiple substitutions specified in non-positional format of string resource string/mcl_launch_downloading_progress. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.3124504Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-fr/strings.xml:232:4: Multiple substitutions specified in non-positional format of string resource string/memory_warning_msg. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.3144632Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-fr/strings.xml:280:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_applying_overrides. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.3184579Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-fr/strings.xml:281:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_metadata. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.3224356Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-fr/strings.xml:282:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_mods. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.3244654Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-fr/strings.xml:288:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_mods_fc. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.3284655Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-fr/strings.xml:323:4: Multiple substitutions specified in non-positional format of string resource string/newdl_downloading_game_files. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.3304655Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-fr/strings.xml:321:4: Multiple substitutions specified in non-positional format of string resource string/newdl_downloading_game_files_size. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.3344587Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-az-rAZ/strings.xml:144:4: Multiple substitutions specified in non-positional format of string resource string/mcl_launch_downloading_progress. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.3364505Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-az-rAZ/strings.xml:227:4: Multiple substitutions specified in non-positional format of string resource string/memory_warning_msg. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.3404696Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-az-rAZ/strings.xml:274:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_applying_overrides. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.3424679Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-az-rAZ/strings.xml:275:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_metadata. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.3464604Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-az-rAZ/strings.xml:276:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_mods. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.3490179Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-az-rAZ/strings.xml:282:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_mods_fc. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.4078435Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-en-rGB/strings.xml:144:4: Multiple substitutions specified in non-positional format of string resource string/mcl_launch_downloading_progress. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.4124882Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-en-rGB/strings.xml:226:4: Multiple substitutions specified in non-positional format of string resource string/memory_warning_msg. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.4144761Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-en-rGB/strings.xml:273:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_applying_overrides. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.4164816Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-en-rGB/strings.xml:274:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_metadata. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.4204809Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-en-rGB/strings.xml:275:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_mods. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.4224646Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-en-rGB/strings.xml:281:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_mods_fc. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.4264649Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-pl/strings.xml:14:4: Multiple substitutions specified in non-positional format of string resource string/address_memory_warning_msg. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.4288527Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-pl/strings.xml:148:4: Multiple substitutions specified in non-positional format of string resource string/mcl_launch_downloading_progress. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.5036475Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-pl/strings.xml:232:4: Multiple substitutions specified in non-positional format of string resource string/memory_warning_msg. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.5054824Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-pl/strings.xml:280:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_applying_overrides. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.5074417Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-pl/strings.xml:281:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_metadata. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.5077234Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-pl/strings.xml:282:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_mods. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.5104665Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-pl/strings.xml:288:4: Multiple substitutions specified in non-positional format of string resource string/modpack_download_downloading_mods_fc. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.5124470Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-pl/strings.xml:323:4: Multiple substitutions specified in non-positional format of string resource string/newdl_downloading_game_files. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.5144473Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-pl/strings.xml:321:4: Multiple substitutions specified in non-positional format of string resource string/newdl_downloading_game_files_size. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.5147392Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-rpr/strings.xml:115:4: Multiple substitutions specified in non-positional format of string resource string/mcl_launch_downloading_progress. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:38.5164563Z /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/res/values-rpr/strings.xml:117:4: Multiple substitutions specified in non-positional format of string resource string/memory_warning_msg. Did you mean to add the formatted="false" attribute?
+build	Build Debug .apk	2026-11-23T12:08:39.1033582Z 
+build	Build Debug .apk	2026-11-23T12:08:39.1063938Z > Task :app_mrlauncher:processFullDebugMainManifest
+build	Build Debug .apk	2026-11-23T12:08:39.1094219Z [shaderc.aar] /home/runner/.gradle/caches/8.14.5/transforms/f92ee45c03be7571631d881c0f777577/transformed/shaderc/AndroidManifest.xml Warning:
+build	Build Debug .apk	2026-11-23T12:08:39.1096263Z 	Namespace 'git.artdeell.mesa_libs' is used in multiple modules and/or libraries: shaderc.aar, spvc.aar. Please ensure that all modules and libraries have a unique namespace. For more information, See https://developer.android.com/studio/build/configure-app-module#set-namespace
+build	Build Debug .apk	2026-11-23T12:08:39.4059859Z 
+build	Build Debug .apk	2026-11-23T12:08:39.4076658Z > Task :app_mrlauncher:processFullDebugManifest
+build	Build Debug .apk	2026-11-23T12:08:39.4083669Z > Task :app_mrlauncher:processFullDebugManifestForPackage
+build	Build Debug .apk	2026-11-23T12:08:40.0033692Z > Task :mojoexec:jni_bindings:bundleLibCompileToJarDebug
+build	Build Debug .apk	2026-11-23T12:08:41.8044729Z Note: /home/runner/work/MrLauncher/MrLauncher/glfw/jni_bindings/src/main/java/git/artdeell/dnbootstrap/glfw/FallbackCursorDrawable.java uses or overrides a deprecated API.
+build	Build Debug .apk	2026-11-23T12:08:41.8045678Z 
+build	Build Debug .apk	2026-11-23T12:08:41.8083668Z > Task :glfw:jni_bindings:compileDebugJavaWithJavac
+build	Build Debug .apk	2026-11-23T12:08:41.8103520Z Note: Recompile with -Xlint:deprecation for details.
+build	Build Debug .apk	2026-11-23T12:08:41.8103894Z 
+build	Build Debug .apk	2026-11-23T12:08:41.8143610Z > Task :glfw:jni_bindings:bundleLibCompileToJarDebug
+build	Build Debug .apk	2026-11-23T12:08:41.8163436Z > Task :sdl:jni_bindings:javaPreCompileDebug
+build	Build Debug .apk	2026-11-23T12:08:42.0054087Z > Task :app_mrlauncher:processFullDebugResources
+build	Build Debug .apk	2026-11-23T12:08:42.9035015Z Note: Some input files use or override a deprecated API.
+build	Build Debug .apk	2026-11-23T12:08:42.9035534Z 
+build	Build Debug .apk	2026-11-23T12:08:42.9036092Z Note: Recompile with -Xlint:deprecation for details.
+build	Build Debug .apk	2026-11-23T12:08:42.9036662Z > Task :sdl:jni_bindings:compileDebugJavaWithJavac
+build	Build Debug .apk	2026-11-23T12:08:42.9037153Z 
+build	Build Debug .apk	2026-11-23T12:08:42.9037451Z > Task :sdl:jni_bindings:bundleLibCompileToJarDebug
+build	Build Debug .apk	2026-11-23T12:08:42.9038078Z > Task :app_mrlauncher:mergeFullDebugShaders
+build	Build Debug .apk	2026-11-23T12:08:48.6041216Z Note: Some input files use or override a deprecated API.
+build	Build Debug .apk	2026-11-23T12:08:48.6041697Z 
+build	Build Debug .apk	2026-11-23T12:08:48.6043774Z Note: Recompile with -Xlint:deprecation for details.
+build	Build Debug .apk	2026-11-23T12:08:48.6044348Z > Task :app_mrlauncher:compileFullDebugJavaWithJavac
+build	Build Debug .apk	2026-11-23T12:08:50.0046283Z 
+build	Build Debug .apk	2026-11-23T12:08:50.0074230Z > Task :app_mrlauncher:compileFullDebugShaders NO-SOURCE
+build	Build Debug .apk	2026-11-23T12:08:50.0074919Z > Task :app_mrlauncher:generateFullDebugAssets UP-TO-DATE
+build	Build Debug .apk	2026-11-23T12:08:50.1046673Z > Task :glfw:jni_bindings:mergeDebugShaders
+build	Build Debug .apk	2026-11-23T12:08:50.1074464Z > Task :glfw:jni_bindings:compileDebugShaders NO-SOURCE
+build	Build Debug .apk	2026-11-23T12:08:50.1098716Z > Task :glfw:jni_bindings:generateDebugAssets UP-TO-DATE
+build	Build Debug .apk	2026-11-23T12:08:50.1120429Z > Task :glfw:jni_bindings:mergeDebugAssets
+build	Build Debug .apk	2026-11-23T12:08:50.1121259Z > Task :mojoexec:jni_bindings:mergeDebugShaders
+build	Build Debug .apk	2026-11-23T12:08:50.1124246Z > Task :mojoexec:jni_bindings:compileDebugShaders NO-SOURCE
+build	Build Debug .apk	2026-11-23T12:08:50.1145839Z > Task :mojoexec:jni_bindings:generateDebugAssets UP-TO-DATE
+build	Build Debug .apk	2026-11-23T12:08:50.1150345Z > Task :mojoexec:jni_bindings:mergeDebugAssets
+build	Build Debug .apk	2026-11-23T12:08:50.1151108Z > Task :sdl:jni_bindings:mergeDebugShaders
+build	Build Debug .apk	2026-11-23T12:08:50.1151820Z > Task :sdl:jni_bindings:compileDebugShaders NO-SOURCE
+build	Build Debug .apk	2026-11-23T12:08:50.1152586Z > Task :sdl:jni_bindings:generateDebugAssets UP-TO-DATE
+build	Build Debug .apk	2026-11-23T12:08:50.1153617Z > Task :sdl:jni_bindings:mergeDebugAssets
+build	Build Debug .apk	2026-11-23T12:08:50.3033789Z > Task :app_mrlauncher:mergeFullDebugAssets
+build	Build Debug .apk	2026-11-23T12:08:51.0034563Z > Task :glfw:jni_bindings:bundleLibRuntimeToJarDebug
+build	Build Debug .apk	2026-11-23T12:08:51.0063965Z > Task :mojoexec:jni_bindings:bundleLibRuntimeToJarDebug
+build	Build Debug .apk	2026-11-23T12:08:51.3044278Z > Task :app_mrlauncher:compressFullDebugAssets
+build	Build Debug .apk	2026-11-23T12:08:51.3054072Z > Task :sdl:jni_bindings:bundleLibRuntimeToJarDebug
+build	Build Debug .apk	2026-11-23T12:08:54.9035549Z > Task :app_mrlauncher:checkFullDebugDuplicateClasses
+build	Build Debug .apk	2026-11-23T12:09:01.5036569Z > Task :app_mrlauncher:dexBuilderFullDebug
+build	Build Debug .apk	2026-11-23T12:09:03.4064134Z > Task :app_mrlauncher:processFullDebugJavaRes NO-SOURCE
+build	Build Debug .apk	2026-11-23T12:09:03.4068074Z > Task :glfw:jni_bindings:processDebugJavaRes NO-SOURCE
+build	Build Debug .apk	2026-11-23T12:09:03.4119342Z > Task :mojoexec:jni_bindings:processDebugJavaRes NO-SOURCE
+build	Build Debug .apk	2026-11-23T12:09:03.4173788Z > Task :sdl:jni_bindings:processDebugJavaRes NO-SOURCE
+build	Build Debug .apk	2026-11-23T12:09:05.0034042Z > Task :app_mrlauncher:mergeFullDebugJavaResource
+build	Build Debug .apk	2026-11-23T12:09:05.0053817Z > Task :app_mrlauncher:copyProjectJarforge_installerNoruntimeProguardNoDebug
+build	Build Debug .apk	2026-11-23T12:09:05.0090265Z > Task :app_mrlauncher:copyProjectJarnoblocklistNoruntimeProguardNoDebug
+build	Build Debug .apk	2026-11-23T12:09:05.1032826Z 
+build	Build Debug .apk	2026-11-23T12:09:05.1044383Z > Task :app_mrlauncher:downloadcaciocavallo17cacio-ttaNoruntimeProguardNoDebug
+build	Build Debug .apk	2026-11-23T12:09:05.1054139Z Download https://jitpack.io/com/github/MojoLauncher/caciocavallo17/cacio-tta/-411454b006-1/cacio-tta--411454b006-1-jar-with-dependencies.jar
+build	Build Debug .apk	2026-11-23T12:09:05.2043420Z 
+build	Build Debug .apk	2026-11-23T12:09:05.2064196Z > Task :app_mrlauncher:downloadcaciocavallocacio-androidnwNoruntimeProguardNoDebug
+build	Build Debug .apk	2026-11-23T12:09:05.2084040Z Download https://jitpack.io/com/github/MojoLauncher/caciocavallo/cacio-androidnw/d0efb5aaba/cacio-androidnw-d0efb5aaba.jar
+build	Build Debug .apk	2026-11-23T12:09:05.3044146Z 
+build	Build Debug .apk	2026-11-23T12:09:05.3057153Z > Task :app_mrlauncher:downloadcaciocavallocacio-sharedNoruntimeProguardNoDebug
+build	Build Debug .apk	2026-11-23T12:09:05.3114258Z Download https://jitpack.io/com/github/MojoLauncher/caciocavallo/cacio-shared/d0efb5aaba/cacio-shared-d0efb5aaba.jar
+build	Build Debug .apk	2026-11-23T12:09:05.3115052Z 
+build	Build Debug .apk	2026-11-23T12:09:05.3167194Z > Task :app_mrlauncher:preNoruntimeProguardNoDebugBuild
+build	Build Debug .apk	2026-11-23T12:09:05.5033784Z > Task :app_mrlauncher:desugarFullDebugFileDependencies
+build	Build Debug .apk	2026-11-23T12:09:06.2033984Z 
+build	Build Debug .apk	2026-11-23T12:09:06.2035033Z > Task :app_mrlauncher:configureCMakeDebug[arm64-v8a] FAILED
+build	Build Debug .apk	2026-11-23T12:09:06.2035985Z C/C++: CMake Error at CMakeLists.txt:6 (add_subdirectory):
+build	Build Debug .apk	2026-11-23T12:09:06.2036779Z C/C++:   add_subdirectory given source "mojoexec" which is not an existing
+build	Build Debug .apk	2026-11-23T12:09:06.2037514Z C/C++:   directory.
+build	Build Debug .apk	2026-11-23T12:09:06.2038111Z C/C++: CMake Error at CMakeLists.txt:18 (add_subdirectory):
+build	Build Debug .apk	2026-11-23T12:09:06.2038957Z C/C++:   add_subdirectory given source "glfw" which is not an existing directory.
+build	Build Debug .apk	2026-11-23T12:09:06.2039823Z C/C++: CMake Error at CMakeLists.txt:20 (target_compile_options):
+build	Build Debug .apk	2026-11-23T12:09:06.2040696Z C/C++:   Cannot specify compile options for target "glfw" which is not built by this
+build	Build Debug .apk	2026-11-23T12:09:06.2041452Z C/C++:   project.
+build	Build Debug .apk	2026-11-23T12:09:06.2042021Z C/C++: CMake Error at CMakeLists.txt:32 (add_subdirectory):
+build	Build Debug .apk	2026-11-23T12:09:06.2043400Z C/C++:   add_subdirectory given source "sdl" which is not an existing directory.
+build	Build Debug .apk	2026-11-23T12:09:06.2044378Z C/C++: CMake Error at CMakeLists.txt:33 (target_link_libraries):
+build	Build Debug .apk	2026-11-23T12:09:06.2045140Z C/C++:   Cannot specify link libraries for target "SDL3-shared" which is not built
+build	Build Debug .apk	2026-11-23T12:09:06.2045889Z C/C++:   by this project.
+build	Build Debug .apk	2026-11-23T12:09:06.2046768Z gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/__run_4-1795435681372.json
+build	Build Debug .apk	2026-11-23T12:09:06.2047545Z 
+build	Build Debug .apk	2026-11-23T12:09:06.2048300Z [Incubating] Problems report is available at: file:///home/runner/work/MrLauncher/MrLauncher/build/reports/problems/problems-report.html
+build	Build Debug .apk	2026-11-23T12:09:06.3038855Z 
+build	Build Debug .apk	2026-11-23T12:09:06.3105757Z FAILURE: Build failed with an exception.
+build	Build Debug .apk	2026-11-23T12:09:06.3106301Z 
+build	Build Debug .apk	2026-11-23T12:09:06.3113314Z 
+build	Build Debug .apk	2026-11-23T12:09:06.3138697Z * What went wrong:
+build	Build Debug .apk	2026-11-23T12:09:06.3139392Z Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+build	Build Debug .apk	2026-11-23T12:09:06.3153843Z Execution failed for task ':app_mrlauncher:configureCMakeDebug[arm64-v8a]'.
+build	Build Debug .apk	2026-11-23T12:09:06.3154365Z 
+build	Build Debug .apk	2026-11-23T12:09:06.3184332Z > [CXX1429] error when building with cmake using /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/jni/CMakeLists.txt: -- Configuring incomplete, errors occurred!
+build	Build Debug .apk	2026-11-23T12:09:06.3185881Z You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+build	Build Debug .apk	2026-11-23T12:09:06.3191165Z   
+build	Build Debug .apk	2026-11-23T12:09:06.3213621Z   C++ build system [configure] failed while executing:
+build	Build Debug .apk	2026-11-23T12:09:06.3214240Z       /usr/local/lib/android/sdk/cmake/3.22.1/bin/cmake \
+build	Build Debug .apk	2026-11-23T12:09:06.3223082Z 
+build	Build Debug .apk	2026-11-23T12:09:06.3233681Z         -H/home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/jni \
+build	Build Debug .apk	2026-11-23T12:09:06.3253462Z         -DCMAKE_SYSTEM_NAME=Android \
+build	Build Debug .apk	2026-11-23T12:09:06.3263990Z For more on this, please refer to https://docs.gradle.org/8.14.5/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+build	Build Debug .apk	2026-11-23T12:09:06.3273378Z         -DCMAKE_EXPORT_COMPILE_COMMANDS=ON \
+build	Build Debug .apk	2026-11-23T12:09:06.3276126Z         -DCMAKE_SYSTEM_VERSION=21 \
+build	Build Debug .apk	2026-11-23T12:09:06.3276538Z 83 actionable tasks: 83 executed
+build	Build Debug .apk	2026-11-23T12:09:06.3295973Z         -DANDROID_PLATFORM=android-21 \
+build	Build Debug .apk	2026-11-23T12:09:06.3313398Z         -DANDROID_ABI=arm64-v8a \
+build	Build Debug .apk	2026-11-23T12:09:06.3333526Z         -DCMAKE_ANDROID_ARCH_ABI=arm64-v8a \
+build	Build Debug .apk	2026-11-23T12:09:06.3341392Z         -DANDROID_NDK=/usr/local/lib/android/sdk/ndk/29.0.14206865 \
+build	Build Debug .apk	2026-11-23T12:09:06.3351948Z         -DCMAKE_ANDROID_NDK=/usr/local/lib/android/sdk/ndk/29.0.14206865 \
+build	Build Debug .apk	2026-11-23T12:09:06.3393940Z         -DCMAKE_TOOLCHAIN_FILE=/usr/local/lib/android/sdk/ndk/29.0.14206865/build/cmake/android.toolchain.cmake \
+build	Build Debug .apk	2026-11-23T12:09:06.3427276Z         -DCMAKE_MAKE_PROGRAM=/usr/local/lib/android/sdk/cmake/3.22.1/bin/ninja \
+build	Build Debug .apk	2026-11-23T12:09:06.3454568Z         -DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/build/intermediates/cxx/Debug/5n1t5w5q/obj/arm64-v8a \
+build	Build Debug .apk	2026-11-23T12:09:06.3456500Z         -DCMAKE_RUNTIME_OUTPUT_DIRECTORY=/home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/build/intermediates/cxx/Debug/5n1t5w5q/obj/arm64-v8a \
+build	Build Debug .apk	2026-11-23T12:09:06.3460872Z         -DCMAKE_BUILD_TYPE=Debug \
+build	Build Debug .apk	2026-11-23T12:09:06.3461913Z         -B/home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/.cxx/Debug/5n1t5w5q/arm64-v8a \
+build	Build Debug .apk	2026-11-23T12:09:06.3470039Z         -GNinja
+build	Build Debug .apk	2026-11-23T12:09:06.3470798Z     from /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher
+build	Build Debug .apk	2026-11-23T12:09:06.3477121Z   CMake Error at CMakeLists.txt:6 (add_subdirectory):
+build	Build Debug .apk	2026-11-23T12:09:06.3477912Z     add_subdirectory given source "mojoexec" which is not an existing
+build	Build Debug .apk	2026-11-23T12:09:06.3480715Z     directory.
+build	Build Debug .apk	2026-11-23T12:09:06.3481211Z   
+build	Build Debug .apk	2026-11-23T12:09:06.3481684Z   
+build	Build Debug .apk	2026-11-23T12:09:06.3485534Z   CMake Error at CMakeLists.txt:18 (add_subdirectory):
+build	Build Debug .apk	2026-11-23T12:09:06.3486907Z     add_subdirectory given source "glfw" which is not an existing directory.
+build	Build Debug .apk	2026-11-23T12:09:06.3491459Z   
+build	Build Debug .apk	2026-11-23T12:09:06.3491934Z   
+build	Build Debug .apk	2026-11-23T12:09:06.3492520Z   CMake Error at CMakeLists.txt:20 (target_compile_options):
+build	Build Debug .apk	2026-11-23T12:09:06.3499461Z     Cannot specify compile options for target "glfw" which is not built by this
+build	Build Debug .apk	2026-11-23T12:09:06.3500364Z     project.
+build	Build Debug .apk	2026-11-23T12:09:06.3500989Z   
+build	Build Debug .apk	2026-11-23T12:09:06.3501446Z   
+build	Build Debug .apk	2026-11-23T12:09:06.3501981Z   CMake Error at CMakeLists.txt:32 (add_subdirectory):
+build	Build Debug .apk	2026-11-23T12:09:06.3524396Z     add_subdirectory given source "sdl" which is not an existing directory.
+build	Build Debug .apk	2026-11-23T12:09:06.3538794Z   
+build	Build Debug .apk	2026-11-23T12:09:06.3561390Z   
+build	Build Debug .apk	2026-11-23T12:09:06.3584471Z   CMake Error at CMakeLists.txt:33 (target_link_libraries):
+build	Build Debug .apk	2026-11-23T12:09:06.3588196Z     Cannot specify link libraries for target "SDL3-shared" which is not built
+build	Build Debug .apk	2026-11-23T12:09:06.3589332Z     by this project. : com.android.ide.common.process.ProcessException: -- Configuring incomplete, errors occurred!
+build	Build Debug .apk	2026-11-23T12:09:06.3590268Z   
+build	Build Debug .apk	2026-11-23T12:09:06.3590804Z   C++ build system [configure] failed while executing:
+build	Build Debug .apk	2026-11-23T12:09:06.3591488Z       /usr/local/lib/android/sdk/cmake/3.22.1/bin/cmake \
+build	Build Debug .apk	2026-11-23T12:09:06.3592298Z         -H/home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/jni \
+build	Build Debug .apk	2026-11-23T12:09:06.3593500Z         -DCMAKE_SYSTEM_NAME=Android \
+build	Build Debug .apk	2026-11-23T12:09:06.3594101Z         -DCMAKE_EXPORT_COMPILE_COMMANDS=ON \
+build	Build Debug .apk	2026-11-23T12:09:06.3594695Z         -DCMAKE_SYSTEM_VERSION=21 \
+build	Build Debug .apk	2026-11-23T12:09:06.3595261Z         -DANDROID_PLATFORM=android-21 \
+build	Build Debug .apk	2026-11-23T12:09:06.3595870Z         -DANDROID_ABI=arm64-v8a \
+build	Build Debug .apk	2026-11-23T12:09:06.3596447Z         -DCMAKE_ANDROID_ARCH_ABI=arm64-v8a \
+build	Build Debug .apk	2026-11-23T12:09:06.3597137Z         -DANDROID_NDK=/usr/local/lib/android/sdk/ndk/29.0.14206865 \
+build	Build Debug .apk	2026-11-23T12:09:06.3597914Z         -DCMAKE_ANDROID_NDK=/usr/local/lib/android/sdk/ndk/29.0.14206865 \
+build	Build Debug .apk	2026-11-23T12:09:06.3598873Z         -DCMAKE_TOOLCHAIN_FILE=/usr/local/lib/android/sdk/ndk/29.0.14206865/build/cmake/android.toolchain.cmake \
+build	Build Debug .apk	2026-11-23T12:09:06.3599856Z         -DCMAKE_MAKE_PROGRAM=/usr/local/lib/android/sdk/cmake/3.22.1/bin/ninja \
+build	Build Debug .apk	2026-11-23T12:09:06.3601014Z         -DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/build/intermediates/cxx/Debug/5n1t5w5q/obj/arm64-v8a \
+build	Build Debug .apk	2026-11-23T12:09:06.3602488Z         -DCMAKE_RUNTIME_OUTPUT_DIRECTORY=/home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/build/intermediates/cxx/Debug/5n1t5w5q/obj/arm64-v8a \
+build	Build Debug .apk	2026-11-23T12:09:06.3603764Z         -DCMAKE_BUILD_TYPE=Debug \
+build	Build Debug .apk	2026-11-23T12:09:06.3604530Z         -B/home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/.cxx/Debug/5n1t5w5q/arm64-v8a \
+build	Build Debug .apk	2026-11-23T12:09:06.3605276Z         -GNinja
+build	Build Debug .apk	2026-11-23T12:09:06.3605834Z     from /home/runner/work/MrLauncher/MrLauncher/app_mrlauncher
+build	Build Debug .apk	2026-11-23T12:09:06.3606534Z   CMake Error at CMakeLists.txt:6 (add_subdirectory):
+build	Build Debug .apk	2026-11-23T12:09:06.3607240Z     add_subdirectory given source "mojoexec" which is not an existing
+build	Build Debug .apk	2026-11-23T12:09:06.3607906Z     directory.
+build	Build Debug .apk	2026-11-23T12:09:06.3608348Z   
+build	Build Debug .apk	2026-11-23T12:09:06.3608758Z   
+build	Build Debug .apk	2026-11-23T12:09:06.3609243Z   CMake Error at CMakeLists.txt:18 (add_subdirectory):
+build	Build Debug .apk	2026-11-23T12:09:06.3610001Z     add_subdirectory given source "glfw" which is not an existing directory.
+build	Build Debug .apk	2026-11-23T12:09:06.3610668Z   
+build	Build Debug .apk	2026-11-23T12:09:06.3611071Z   
+build	Build Debug .apk	2026-11-23T12:09:06.3611568Z   CMake Error at CMakeLists.txt:20 (target_compile_options):
+build	Build Debug .apk	2026-11-23T12:09:06.3612610Z     Cannot specify compile options for target "glfw" which is not built by this
+build	Build Debug .apk	2026-11-23T12:09:06.3617817Z     project.
+build	Build Debug .apk	2026-11-23T12:09:06.3618291Z   
+build	Build Debug .apk	2026-11-23T12:09:06.3618730Z   
+build	Build Debug .apk	2026-11-23T12:09:06.3619256Z   CMake Error at CMakeLists.txt:32 (add_subdirectory):
+build	Build Debug .apk	2026-11-23T12:09:06.3620045Z     add_subdirectory given source "sdl" which is not an existing directory.
+build	Build Debug .apk	2026-11-23T12:09:06.3620751Z   
+build	Build Debug .apk	2026-11-23T12:09:06.3621184Z   
+build	Build Debug .apk	2026-11-23T12:09:06.3621719Z   CMake Error at CMakeLists.txt:33 (target_link_libraries):
+build	Build Debug .apk	2026-11-23T12:09:06.3623052Z     Cannot specify link libraries for target "SDL3-shared" which is not built
+build	Build Debug .apk	2026-11-23T12:09:06.3625488Z     by this project.
+build	Build Debug .apk	2026-11-23T12:09:06.3626502Z   	at com.android.build.gradle.internal.cxx.process.ExecuteProcessKt.execute(ExecuteProcess.kt:288)
+build	Build Debug .apk	2026-11-23T12:09:06.3627859Z   	at com.android.build.gradle.internal.cxx.process.ExecuteProcessKt$executeProcess$1.invoke(ExecuteProcess.kt:108)
+build	Build Debug .apk	2026-11-23T12:09:06.3655437Z   	at com.android.build.gradle.internal.cxx.process.ExecuteProcessKt$executeProcess$1.invoke(ExecuteProcess.kt:106)
+build	Build Debug .apk	2026-11-23T12:09:06.3670913Z   	at com.android.build.gradle.internal.cxx.timing.TimingEnvironmentKt.time(TimingEnvironment.kt:32)
+build	Build Debug .apk	2026-11-23T12:09:06.3672334Z   	at com.android.build.gradle.internal.cxx.process.ExecuteProcessKt.executeProcess(ExecuteProcess.kt:106)
+build	Build Debug .apk	2026-11-23T12:09:06.3674021Z   	at com.android.build.gradle.internal.cxx.process.ExecuteProcessKt.executeProcess$default(ExecuteProcess.kt:85)
+build	Build Debug .apk	2026-11-23T12:09:06.3675556Z   	at com.android.build.gradle.tasks.CmakeQueryMetadataGenerator.executeProcess(CmakeFileApiMetadataGenerator.kt:59)
+build	Build Debug .apk	2026-11-23T12:09:06.3677147Z   	at com.android.build.gradle.tasks.ExternalNativeJsonGenerator$configureOneAbi$1$1$3.invoke(ExternalNativeJsonGenerator.kt:247)
+build	Build Debug .apk	2026-11-23T12:09:06.3678737Z   	at com.android.build.gradle.tasks.ExternalNativeJsonGenerator$configureOneAbi$1$1$3.invoke(ExternalNativeJsonGenerator.kt:247)
+build	Build Debug .apk	2026-11-23T12:09:06.3680168Z   	at com.android.build.gradle.internal.cxx.timing.TimingEnvironmentKt.time(TimingEnvironment.kt:32)
+build	Build Debug .apk	2026-11-23T12:09:06.3681570Z   	at com.android.build.gradle.tasks.ExternalNativeJsonGenerator.configureOneAbi(ExternalNativeJsonGenerator.kt:247)
+build	Build Debug .apk	2026-11-23T12:09:06.3683157Z   	at com.android.build.gradle.tasks.ExternalNativeJsonGenerator.configure(ExternalNativeJsonGenerator.kt:113)
+build	Build Debug .apk	2026-11-23T12:09:06.3684584Z   	at com.android.build.gradle.tasks.ExternalNativeBuildJsonTask.doTaskAction(ExternalNativeBuildJsonTask.kt:89)
+build	Build Debug .apk	2026-11-23T12:09:06.3686059Z   	at com.android.build.gradle.internal.tasks.UnsafeOutputsTask$taskAction$$inlined$recordTaskAction$1.invoke(BaseTask.kt:59)
+build	Build Debug .apk	2026-11-23T12:09:06.3687325Z   	at com.android.build.gradle.internal.tasks.Blocks.recordSpan(Blocks.java:51)
+build	Build Debug .apk	2026-11-23T12:09:06.3688475Z   	at com.android.build.gradle.internal.tasks.UnsafeOutputsTask.taskAction(UnsafeOutputsTask.kt:81)
+build	Build Debug .apk	2026-11-23T12:09:06.3689663Z   	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+build	Build Debug .apk	2026-11-23T12:09:06.3690839Z   	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+build	Build Debug .apk	2026-11-23T12:09:06.3692172Z   	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+build	Build Debug .apk	2026-11-23T12:09:06.3693499Z   	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+build	Build Debug .apk	2026-11-23T12:09:06.3694426Z   	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:125)
+build	Build Debug .apk	2026-11-23T12:09:06.3695549Z   	at org.gradle.api.internal.project.taskfactory.StandardTaskAction.doExecute(StandardTaskAction.java:58)
+build	Build Debug .apk	2026-11-23T12:09:06.3696894Z   	at org.gradle.api.internal.project.taskfactory.StandardTaskAction.execute(StandardTaskAction.java:51)
+build	Build Debug .apk	2026-11-23T12:09:06.3698149Z   	at org.gradle.api.internal.project.taskfactory.StandardTaskAction.execute(StandardTaskAction.java:29)
+build	Build Debug .apk	2026-11-23T12:09:06.3699369Z   	at org.gradle.api.internal.tasks.execution.TaskExecution$3.run(TaskExecution.java:244)
+build	Build Debug .apk	2026-11-23T12:09:06.3700545Z   	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:30)
+build	Build Debug .apk	2026-11-23T12:09:06.3701866Z   	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:27)
+build	Build Debug .apk	2026-11-23T12:09:06.3703328Z   	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
+build	Build Debug .apk	2026-11-23T12:09:06.3704663Z   	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:60)
+build	Build Debug .apk	2026-11-23T12:09:06.3706293Z   	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:167)
+build	Build Debug .apk	2026-11-23T12:09:06.3707831Z   	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
+build	Build Debug .apk	2026-11-23T12:09:06.3709133Z   	at org.gradle.internal.operations.DefaultBuildOperationRunner.run(DefaultBuildOperationRunner.java:48)
+build	Build Debug .apk	2026-11-23T12:09:06.3710342Z   	at org.gradle.api.internal.tasks.execution.TaskExecution.executeAction(TaskExecution.java:229)
+build	Build Debug .apk	2026-11-23T12:09:06.3711525Z   	at org.gradle.api.internal.tasks.execution.TaskExecution.executeActions(TaskExecution.java:212)
+build	Build Debug .apk	2026-11-23T12:09:06.3712851Z   	at org.gradle.api.internal.tasks.execution.TaskExecution.executeWithPreviousOutputFiles(TaskExecution.java:195)
+build	Build Debug .apk	2026-11-23T12:09:06.3714457Z   	at org.gradle.api.internal.tasks.execution.TaskExecution.execute(TaskExecution.java:162)
+build	Build Debug .apk	2026-11-23T12:09:06.3715698Z   	at org.gradle.internal.execution.steps.ExecuteStep.executeInternal(ExecuteStep.java:105)
+build	Build Debug .apk	2026-11-23T12:09:06.3716950Z   	at org.gradle.internal.execution.steps.ExecuteStep.access$000(ExecuteStep.java:44)
+build	Build Debug .apk	2026-11-23T12:09:06.3718069Z   	at org.gradle.internal.execution.steps.ExecuteStep$1.call(ExecuteStep.java:59)
+build	Build Debug .apk	2026-11-23T12:09:06.3719144Z   	at org.gradle.internal.execution.steps.ExecuteStep$1.call(ExecuteStep.java:56)
+build	Build Debug .apk	2026-11-23T12:09:06.3720466Z   	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:210)
+build	Build Debug .apk	2026-11-23T12:09:06.3722168Z   	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:205)
+build	Build Debug .apk	2026-11-23T12:09:06.3723833Z   	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
+build	Build Debug .apk	2026-11-23T12:09:06.3734338Z   	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:60)
+build	Build Debug .apk	2026-11-23T12:09:06.3751558Z   	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:167)
+build	Build Debug .apk	2026-11-23T12:09:06.3785857Z   	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
+build	Build Debug .apk	2026-11-23T12:09:06.3803794Z   	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:54)
+build	Build Debug .apk	2026-11-23T12:09:06.3823712Z   	at org.gradle.internal.execution.steps.ExecuteStep.execute(ExecuteStep.java:56)
+build	Build Debug .apk	2026-11-23T12:09:06.3884103Z   	at org.gradle.internal.execution.steps.ExecuteStep.execute(ExecuteStep.java:44)
+build	Build Debug .apk	2026-11-23T12:09:06.3924237Z   	at org.gradle.internal.execution.steps.CancelExecutionStep.execute(CancelExecutionStep.java:42)
+build	Build Debug .apk	2026-11-23T12:09:06.3941679Z   	at org.gradle.internal.execution.steps.TimeoutStep.executeWithoutTimeout(TimeoutStep.java:75)
+build	Build Debug .apk	2026-11-23T12:09:06.3983926Z   	at org.gradle.internal.execution.steps.TimeoutStep.execute(TimeoutStep.java:55)
+build	Build Debug .apk	2026-11-23T12:09:06.4004030Z   	at org.gradle.internal.execution.steps.PreCreateOutputParentsStep.execute(PreCreateOutputParentsStep.java:50)
+build	Build Debug .apk	2026-11-23T12:09:06.4033848Z   	at org.gradle.internal.execution.steps.PreCreateOutputParentsStep.execute(PreCreateOutputParentsStep.java:28)
+build	Build Debug .apk	2026-11-23T12:09:06.4035356Z   	at org.gradle.internal.execution.steps.RemovePreviousOutputsStep.execute(RemovePreviousOutputsStep.java:67)
+build	Build Debug .apk	2026-11-23T12:09:06.4054005Z   	at org.gradle.internal.execution.steps.RemovePreviousOutputsStep.execute(RemovePreviousOutputsStep.java:37)
+build	Build Debug .apk	2026-11-23T12:09:06.4073937Z   	at org.gradle.internal.execution.steps.BroadcastChangingOutputsStep.execute(BroadcastChangingOutputsStep.java:61)
+build	Build Debug .apk	2026-11-23T12:09:06.4077767Z   	at org.gradle.internal.execution.steps.BroadcastChangingOutputsStep.execute(BroadcastChangingOutputsStep.java:26)
+build	Build Debug .apk	2026-11-23T12:09:06.4079423Z   	at org.gradle.internal.execution.steps.CaptureOutputsAfterExecutionStep.execute(CaptureOutputsAfterExecutionStep.java:69)
+build	Build Debug .apk	2026-11-23T12:09:06.4081005Z   	at org.gradle.internal.execution.steps.CaptureOutputsAfterExecutionStep.execute(CaptureOutputsAfterExecutionStep.java:46)
+build	Build Debug .apk	2026-11-23T12:09:06.4083249Z   	at org.gradle.internal.execution.steps.ResolveInputChangesStep.execute(ResolveInputChangesStep.java:40)
+build	Build Debug .apk	2026-11-23T12:09:06.4084616Z   	at org.gradle.internal.execution.steps.ResolveInputChangesStep.execute(ResolveInputChangesStep.java:29)
+build	Build Debug .apk	2026-11-23T12:09:06.4085926Z   	at org.gradle.internal.execution.steps.BuildCacheStep.executeWithoutCache(BuildCacheStep.java:189)
+build	Build Debug .apk	2026-11-23T12:09:06.4087178Z   	at org.gradle.internal.execution.steps.BuildCacheStep.lambda$execute$1(BuildCacheStep.java:75)
+build	Build Debug .apk	2026-11-23T12:09:06.4104879Z   	at org.gradle.internal.Either$Right.fold(Either.java:175)
+build	Build Debug .apk	2026-11-23T12:09:06.4105858Z   	at org.gradle.internal.execution.caching.CachingState.fold(CachingState.java:62)
+build	Build Debug .apk	2026-11-23T12:09:06.4106964Z   	at org.gradle.internal.execution.steps.BuildCacheStep.execute(BuildCacheStep.java:73)
+build	Build Debug .apk	2026-11-23T12:09:06.4108140Z   	at org.gradle.internal.execution.steps.BuildCacheStep.execute(BuildCacheStep.java:48)
+build	Build Debug .apk	2026-11-23T12:09:06.4109425Z   	at org.gradle.internal.execution.steps.StoreExecutionStateStep.execute(StoreExecutionStateStep.java:46)
+build	Build Debug .apk	2026-11-23T12:09:06.4110808Z   	at org.gradle.internal.execution.steps.StoreExecutionStateStep.execute(StoreExecutionStateStep.java:35)
+build	Build Debug .apk	2026-11-23T12:09:06.4112055Z   	at org.gradle.internal.execution.steps.SkipUpToDateStep.executeBecause(SkipUpToDateStep.java:75)
+build	Build Debug .apk	2026-11-23T12:09:06.4113544Z   	at org.gradle.internal.execution.steps.SkipUpToDateStep.lambda$execute$2(SkipUpToDateStep.java:53)
+build	Build Debug .apk	2026-11-23T12:09:06.4114618Z   	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+build	Build Debug .apk	2026-11-23T12:09:06.4115658Z   	at org.gradle.internal.execution.steps.SkipUpToDateStep.execute(SkipUpToDateStep.java:53)
+build	Build Debug .apk	2026-11-23T12:09:06.4116865Z   	at org.gradle.internal.execution.steps.SkipUpToDateStep.execute(SkipUpToDateStep.java:35)
+build	Build Debug .apk	2026-11-23T12:09:06.4118460Z   	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsFinishedStep.execute(MarkSnapshottingInputsFinishedStep.java:37)
+build	Build Debug .apk	2026-11-23T12:09:06.4120233Z   	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsFinishedStep.execute(MarkSnapshottingInputsFinishedStep.java:27)
+build	Build Debug .apk	2026-11-23T12:09:06.4122074Z   	at org.gradle.internal.execution.steps.ResolveIncrementalCachingStateStep.executeDelegate(ResolveIncrementalCachingStateStep.java:49)
+build	Build Debug .apk	2026-11-23T12:09:06.4124028Z   	at org.gradle.internal.execution.steps.ResolveIncrementalCachingStateStep.executeDelegate(ResolveIncrementalCachingStateStep.java:27)
+build	Build Debug .apk	2026-11-23T12:09:06.4125682Z   	at org.gradle.internal.execution.steps.AbstractResolveCachingStateStep.execute(AbstractResolveCachingStateStep.java:71)
+build	Build Debug .apk	2026-11-23T12:09:06.4127226Z   	at org.gradle.internal.execution.steps.AbstractResolveCachingStateStep.execute(AbstractResolveCachingStateStep.java:39)
+build	Build Debug .apk	2026-11-23T12:09:06.4128595Z   	at org.gradle.internal.execution.steps.ResolveChangesStep.execute(ResolveChangesStep.java:65)
+build	Build Debug .apk	2026-11-23T12:09:06.4129774Z   	at org.gradle.internal.execution.steps.ResolveChangesStep.execute(ResolveChangesStep.java:36)
+build	Build Debug .apk	2026-11-23T12:09:06.4130906Z   	at org.gradle.internal.execution.steps.ValidateStep.execute(ValidateStep.java:107)
+build	Build Debug .apk	2026-11-23T12:09:06.4131968Z   	at org.gradle.internal.execution.steps.ValidateStep.execute(ValidateStep.java:56)
+build	Build Debug .apk	2026-11-23T12:09:06.4133575Z   	at org.gradle.internal.execution.steps.AbstractCaptureStateBeforeExecutionStep.execute(AbstractCaptureStateBeforeExecutionStep.java:64)
+build	Build Debug .apk	2026-11-23T12:09:06.4135413Z   	at org.gradle.internal.execution.steps.AbstractCaptureStateBeforeExecutionStep.execute(AbstractCaptureStateBeforeExecutionStep.java:43)
+build	Build Debug .apk	2026-11-23T12:09:06.4137174Z   	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.executeWithNonEmptySources(AbstractSkipEmptyWorkStep.java:125)
+build	Build Debug .apk	2026-11-23T12:09:06.4138715Z   	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.execute(AbstractSkipEmptyWorkStep.java:56)
+build	Build Debug .apk	2026-11-23T12:09:06.4140073Z   	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.execute(AbstractSkipEmptyWorkStep.java:36)
+build	Build Debug .apk	2026-11-23T12:09:06.4141874Z   	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsStartedStep.execute(MarkSnapshottingInputsStartedStep.java:38)
+build	Build Debug .apk	2026-11-23T12:09:06.4143884Z   	at org.gradle.internal.execution.steps.LoadPreviousExecutionStateStep.execute(LoadPreviousExecutionStateStep.java:36)
+build	Build Debug .apk	2026-11-23T12:09:06.4145389Z   	at org.gradle.internal.execution.steps.LoadPreviousExecutionStateStep.execute(LoadPreviousExecutionStateStep.java:23)
+build	Build Debug .apk	2026-11-23T12:09:06.4146786Z   	at org.gradle.internal.execution.steps.HandleStaleOutputsStep.execute(HandleStaleOutputsStep.java:75)
+build	Build Debug .apk	2026-11-23T12:09:06.4148109Z   	at org.gradle.internal.execution.steps.HandleStaleOutputsStep.execute(HandleStaleOutputsStep.java:41)
+build	Build Debug .apk	2026-11-23T12:09:06.4149596Z   	at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.lambda$execute$0(AssignMutableWorkspaceStep.java:35)
+build	Build Debug .apk	2026-11-23T12:09:06.4150935Z   	at org.gradle.api.internal.tasks.execution.TaskExecution$4.withWorkspace(TaskExecution.java:289)
+build	Build Debug .apk	2026-11-23T12:09:06.4152140Z   	at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.execute(AssignMutableWorkspaceStep.java:31)
+build	Build Debug .apk	2026-11-23T12:09:06.4153554Z   	at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.execute(AssignMutableWorkspaceStep.java:22)
+build	Build Debug .apk	2026-11-23T12:09:06.4154799Z   	at org.gradle.internal.execution.steps.ChoosePipelineStep.execute(ChoosePipelineStep.java:40)
+build	Build Debug .apk	2026-11-23T12:09:06.4155984Z   	at org.gradle.internal.execution.steps.ChoosePipelineStep.execute(ChoosePipelineStep.java:23)
+build	Build Debug .apk	2026-11-23T12:09:06.4157363Z   	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.lambda$execute$2(ExecuteWorkBuildOperationFiringStep.java:67)
+build	Build Debug .apk	2026-11-23T12:09:06.4158675Z   	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+build	Build Debug .apk	2026-11-23T12:09:06.4159888Z   	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.execute(ExecuteWorkBuildOperationFiringStep.java:67)
+build	Build Debug .apk	2026-11-23T12:09:06.4161569Z   	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.execute(ExecuteWorkBuildOperationFiringStep.java:39)
+build	Build Debug .apk	2026-11-23T12:09:06.4163167Z   	at org.gradle.internal.execution.steps.IdentityCacheStep.execute(IdentityCacheStep.java:46)
+build	Build Debug .apk	2026-11-23T12:09:06.4164368Z   	at org.gradle.internal.execution.steps.IdentityCacheStep.execute(IdentityCacheStep.java:34)
+build	Build Debug .apk	2026-11-23T12:09:06.4165476Z   	at org.gradle.internal.execution.steps.IdentifyStep.execute(IdentifyStep.java:48)
+build	Build Debug .apk	2026-11-23T12:09:06.4166547Z   	at org.gradle.internal.execution.steps.IdentifyStep.execute(IdentifyStep.java:35)
+build	Build Debug .apk	2026-11-23T12:09:06.4167715Z   	at org.gradle.internal.execution.impl.DefaultExecutionEngine$1.execute(DefaultExecutionEngine.java:64)
+build	Build Debug .apk	2026-11-23T12:09:06.4169136Z   	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeIfValid(ExecuteActionsTaskExecuter.java:127)
+build	Build Debug .apk	2026-11-23T12:09:06.4170790Z   	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:116)
+build	Build Debug .apk	2026-11-23T12:09:06.4172453Z   	at org.gradle.api.internal.tasks.execution.ProblemsTaskPathTrackingTaskExecuter.execute(ProblemsTaskPathTrackingTaskExecuter.java:41)
+build	Build Debug .apk	2026-11-23T12:09:06.4174311Z   	at org.gradle.api.internal.tasks.execution.FinalizePropertiesTaskExecuter.execute(FinalizePropertiesTaskExecuter.java:46)
+build	Build Debug .apk	2026-11-23T12:09:06.4175941Z   	at org.gradle.api.internal.tasks.execution.ResolveTaskExecutionModeExecuter.execute(ResolveTaskExecutionModeExecuter.java:51)
+build	Build Debug .apk	2026-11-23T12:09:06.4177586Z   	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:57)
+build	Build Debug .apk	2026-11-23T12:09:06.4179045Z   	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:74)
+build	Build Debug .apk	2026-11-23T12:09:06.4180465Z   	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:36)
+build	Build Debug .apk	2026-11-23T12:09:06.4181938Z   	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.executeTask(EventFiringTaskExecuter.java:77)
+build	Build Debug .apk	2026-11-23T12:09:06.4183794Z   	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:55)
+build	Build Debug .apk	2026-11-23T12:09:06.4185464Z   	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:52)
+build	Build Debug .apk	2026-11-23T12:09:06.4186953Z   	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:210)
+build	Build Debug .apk	2026-11-23T12:09:06.4188499Z   	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:205)
+build	Build Debug .apk	2026-11-23T12:09:06.4192763Z   	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
+build	Build Debug .apk	2026-11-23T12:09:06.4198001Z   	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:60)
+build	Build Debug .apk	2026-11-23T12:09:06.4199354Z   	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:167)
+build	Build Debug .apk	2026-11-23T12:09:06.4200692Z   	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
+build	Build Debug .apk	2026-11-23T12:09:06.4201984Z   	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:54)
+build	Build Debug .apk	2026-11-23T12:09:06.4203411Z   	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter.execute(EventFiringTaskExecuter.java:52)
+build	Build Debug .apk	2026-11-23T12:09:06.4207857Z   	at org.gradle.execution.plan.LocalTaskNodeExecutor.execute(LocalTaskNodeExecutor.java:42)
+build	Build Debug .apk	2026-11-23T12:09:06.4209118Z   	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:331)
+build	Build Debug .apk	2026-11-23T12:09:06.4210532Z   	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:318)
+build	Build Debug .apk	2026-11-23T12:09:06.4212028Z   	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.lambda$execute$0(DefaultTaskExecutionGraph.java:314)
+build	Build Debug .apk	2026-11-23T12:09:06.4213521Z   	at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:85)
+build	Build Debug .apk	2026-11-23T12:09:06.4214944Z   	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:314)
+build	Build Debug .apk	2026-11-23T12:09:06.4216450Z   	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:303)
+build	Build Debug .apk	2026-11-23T12:09:06.4217753Z   	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.execute(DefaultPlanExecutor.java:459)
+build	Build Debug .apk	2026-11-23T12:09:06.4218823Z   	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.run(DefaultPlanExecutor.java:376)
+build	Build Debug .apk	2026-11-23T12:09:06.4219834Z   	at org.gradle.execution.plan.DefaultPlanExecutor.process(DefaultPlanExecutor.java:111)
+build	Build Debug .apk	2026-11-23T12:09:06.4220995Z   	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph.executeWithServices(DefaultTaskExecutionGraph.java:138)
+build	Build Debug .apk	2026-11-23T12:09:06.4222228Z   	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph.execute(DefaultTaskExecutionGraph.java:123)
+build	Build Debug .apk	2026-11-23T12:09:06.4223489Z   	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:35)
+build	Build Debug .apk	2026-11-23T12:09:06.4224678Z   	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:51)
+build	Build Debug .apk	2026-11-23T12:09:06.4226108Z   	at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor$ExecuteTasks.call(BuildOperationFiringBuildWorkerExecutor.java:54)
+build	Build Debug .apk	2026-11-23T12:09:06.4227641Z   	at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor$ExecuteTasks.call(BuildOperationFiringBuildWorkerExecutor.java:43)
+build	Build Debug .apk	2026-11-23T12:09:06.4229107Z   	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:210)
+build	Build Debug .apk	2026-11-23T12:09:06.4230834Z   	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:205)
+build	Build Debug .apk	2026-11-23T12:09:06.4232804Z   	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
+build	Build Debug .apk	2026-11-23T12:09:06.4234337Z   	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:60)
+build	Build Debug .apk	2026-11-23T12:09:06.4235701Z   	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:167)
+build	Build Debug .apk	2026-11-23T12:09:06.4237060Z   	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
+build	Build Debug .apk	2026-11-23T12:09:06.4238445Z   	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:54)
+build	Build Debug .apk	2026-11-23T12:09:06.4239800Z   	at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor.execute(BuildOperationFiringBuildWorkerExecutor.java:40)
+build	Build Debug .apk	2026-11-23T12:09:06.4241285Z   	at org.gradle.internal.build.DefaultBuildLifecycleController.lambda$executeTasks$10(DefaultBuildLifecycleController.java:313)
+build	Build Debug .apk	2026-11-23T12:09:06.4242733Z   	at org.gradle.internal.model.StateTransitionController.doTransition(StateTransitionController.java:266)
+build	Build Debug .apk	2026-11-23T12:09:06.4244184Z   	at org.gradle.internal.model.StateTransitionController.lambda$tryTransition$8(StateTransitionController.java:177)
+build	Build Debug .apk	2026-11-23T12:09:06.4245366Z   	at org.gradle.internal.work.DefaultSynchronizer.withLock(DefaultSynchronizer.java:46)
+build	Build Debug .apk	2026-11-23T12:09:06.4246540Z   	at org.gradle.internal.model.StateTransitionController.tryTransition(StateTransitionController.java:177)
+build	Build Debug .apk	2026-11-23T12:09:06.4247870Z   	at org.gradle.internal.build.DefaultBuildLifecycleController.executeTasks(DefaultBuildLifecycleController.java:304)
+build	Build Debug .apk	2026-11-23T12:09:06.4249326Z   	at org.gradle.internal.build.DefaultBuildWorkGraphController$DefaultBuildWorkGraph.runWork(DefaultBuildWorkGraphController.java:220)
+build	Build Debug .apk	2026-11-23T12:09:06.4250739Z   	at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:263)
+build	Build Debug .apk	2026-11-23T12:09:06.4252055Z   	at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:127)
+build	Build Debug .apk	2026-11-23T12:09:06.4253895Z   	at org.gradle.composite.internal.DefaultBuildController.doRun(DefaultBuildController.java:181)
+build	Build Debug .apk	2026-11-23T12:09:06.4255191Z   	at org.gradle.composite.internal.DefaultBuildController.access$000(DefaultBuildController.java:50)
+build	Build Debug .apk	2026-11-23T12:09:06.4256506Z   	at org.gradle.composite.internal.DefaultBuildController$BuildOpRunnable.lambda$run$0(DefaultBuildController.java:198)
+build	Build Debug .apk	2026-11-23T12:09:06.4257891Z   	at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:85)
+build	Build Debug .apk	2026-11-23T12:09:06.4259169Z   	at org.gradle.composite.internal.DefaultBuildController$BuildOpRunnable.run(DefaultBuildController.java:198)
+build	Build Debug .apk	2026-11-23T12:09:06.4260316Z   	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+build	Build Debug .apk	2026-11-23T12:09:06.4261199Z   	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+build	Build Debug .apk	2026-11-23T12:09:06.4262204Z   	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+build	Build Debug .apk	2026-11-23T12:09:06.4266118Z   	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:48)
+build	Build Debug .apk	2026-11-23T12:09:06.4267283Z   	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+build	Build Debug .apk	2026-11-23T12:09:06.4268345Z   	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+build	Build Debug .apk	2026-11-23T12:09:06.4269183Z   	at java.base/java.lang.Thread.run(Thread.java:840)
+build	Build Debug .apk	2026-11-23T12:09:06.4274575Z   Caused by: com.android.ide.common.process.ProcessException: Error while executing process /usr/local/lib/android/sdk/cmake/3.22.1/bin/cmake with arguments {-H/home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/src/main/jni -DCMAKE_SYSTEM_NAME=Android -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_SYSTEM_VERSION=21 -DANDROID_PLATFORM=android-21 -DANDROID_ABI=arm64-v8a -DCMAKE_ANDROID_ARCH_ABI=arm64-v8a -DANDROID_NDK=/usr/local/lib/android/sdk/ndk/29.0.14206865 -DCMAKE_ANDROID_NDK=/usr/local/lib/android/sdk/ndk/29.0.14206865 -DCMAKE_TOOLCHAIN_FILE=/usr/local/lib/android/sdk/ndk/29.0.14206865/build/cmake/android.toolchain.cmake -DCMAKE_MAKE_PROGRAM=/usr/local/lib/android/sdk/cmake/3.22.1/bin/ninja -DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/build/intermediates/cxx/Debug/5n1t5w5q/obj/arm64-v8a -DCMAKE_RUNTIME_OUTPUT_DIRECTORY=/home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/build/intermediates/cxx/Debug/5n1t5w5q/obj/arm64-v8a -DCMAKE_BUILD_TYPE=Debug -B/home/runner/work/MrLauncher/MrLauncher/app_mrlauncher/.cxx/Debug/5n1t5w5q/arm64-v8a -GNinja}
+build	Build Debug .apk	2026-11-23T12:09:06.4281119Z   	at com.android.build.gradle.internal.process.GradleProcessResult.buildProcessException(GradleProcessResult.java:73)
+build	Build Debug .apk	2026-11-23T12:09:06.4282528Z   	at com.android.build.gradle.internal.process.GradleProcessResult.assertNormalExitValue(GradleProcessResult.java:48)
+build	Build Debug .apk	2026-11-23T12:09:06.4283893Z   	at com.android.build.gradle.internal.cxx.process.ExecuteProcessKt.execute(ExecuteProcess.kt:277)
+build	Build Debug .apk	2026-11-23T12:09:06.4284677Z   	... 173 more
+build	Build Debug .apk	2026-11-23T12:09:06.4285601Z   Caused by: org.gradle.process.internal.ExecException: Process 'command '/usr/local/lib/android/sdk/cmake/3.22.1/bin/cmake'' finished with non-zero exit value 1
+build	Build Debug .apk	2026-11-23T12:09:06.4286947Z   	at org.gradle.process.internal.DefaultExecHandle$ExecResultImpl.assertNormalExitValue(DefaultExecHandle.java:442)
+build	Build Debug .apk	2026-11-23T12:09:06.4288214Z   	at com.android.build.gradle.internal.process.GradleProcessResult.assertNormalExitValue(GradleProcessResult.java:46)
+build	Build Debug .apk	2026-11-23T12:09:06.4289077Z   	... 174 more
+build	Build Debug .apk	2026-11-23T12:09:06.4289350Z 
+build	Build Debug .apk	2026-11-23T12:09:06.4289543Z 
+build	Build Debug .apk	2026-11-23T12:09:06.4289751Z * Try:
+build	Build Debug .apk	2026-11-23T12:09:06.4290150Z > Run with --stacktrace option to get the stack trace.
+build	Build Debug .apk	2026-11-23T12:09:06.4290688Z > Run with --info or --debug option to get more log output.
+build	Build Debug .apk	2026-11-23T12:09:06.4291206Z > Run with --scan to get full insights.
+build	Build Debug .apk	2026-11-23T12:09:06.4291689Z > Get more help at https://help.gradle.org.
+build	Build Debug .apk	2026-11-23T12:09:06.4292115Z 
+build	Build Debug .apk	2026-11-23T12:09:06.4292328Z BUILD FAILED in 1m 8s
+build	Build Debug .apk	2026-11-23T12:09:06.8092861Z ##[error]Process completed with exit code 1.
