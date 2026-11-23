@@ -14,8 +14,7 @@ Developed by **AditzMods**.
 
 ## Features
 
-- **Minimalist UI:** Clean, distraction-free dark/monochrome interface engineered for fast navigation and low visual clutter.
-- **Custom Renderer Plugin Support:** Full compatibility with external OpenGL wrapper plugins (GL4ES, MobileGlues, Zink, Angle), including native support for the **Mobile Rendered** plugin (`V17+` and `V17-`).
+- **Custom Rendererenderer Plugin Support:** Full compatibility with external OpenGL wrapper plugins (GL4ES, MobileGlues, Zink, Angle), including native support for the **Mobile Rendered** plugin (`V17+` and `V17-`).
 - **Modern Android Compatibility:** Optimized for Android 14, 15, and 16+ with improved file management and scoped storage handling.
 - **Built-in Modloader & Utilities:** Supports Vanilla, Forge, Fabric, Quilt, and OptiFine installations, plus direct `.jar` execution, custom on-screen control mapping, and one-tap log sharing.
 - **Lightweight Performance:** Stripped of unnecessary bloat to preserve RAM and maintain smooth frame pacing on mid-range and entry-level Android devices.
@@ -25,7 +24,7 @@ Developed by **AditzMods**.
 ## Downloads & Community
 
 - **Official WhatsApp Channel (Updates & Guides):** [Join WhatsApp Channel](https://whatsapp.com/channel/0029VbEO1q52v1Ilbyazeh2I)
-- **Website:** [aditzmods.my.id](https://aditzmods.my.id)
+- **Github:** [adityaoffc0-drood](https://github.com/adityaoffc0-droid)
 
 ---
 
