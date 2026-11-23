@@ -101,4 +101,26 @@ public abstract class GLESRenderSpec implements RenderSpec {
             return 3;
         }
     }
+
+    public static class GL4ES3RenderSpec extends GL4ESRenderSpec {
+        public boolean compatibleDevice(Context context) {
+            return JREUtils.getDetectedVersion() >= 3;
+        }
+        public String name() {
+            return "GL4ES (ES3)";
+        }
+        public int displayName() {
+            return R.string.mcl_setting_renderer_gl4es3;
+        }
+        public String tag() {
+            return Renderers.GL4ES3_RENDERER;
+        }
+        protected int glesVersion() {
+            return 3;
+        }
+        public void setupEnvironment(Context context, Map<String, String> envMap) {
+            super.setupEnvironment(context, envMap);
+            envMap.put("LIBGL_ES", "3");
+        }
+    }
 }

@@ -29,3 +29,12 @@ Manifest plugin:
   </activity>
 </application>
 Opsional: mrlauncher.renderer.vulkan (boolean), mrlauncher.renderer.env ("KEY=VAL;KEY2=VAL2").
+
+## Plugin format Zalith/FCL
+Plugin APK dengan meta-data aplikasi fclPlugin=true dan renderer="Nama:libGL.so:libEGL.so"
+(opsional pojavEnv="KEY=VAL:KEY2=VAL2") otomatis terdeteksi. Perlu izin QUERY_ALL_PACKAGES.
+
+## Dari mrlaunchersourcecode.zip
+- libvulkan_freedreno.so (arm64-v8a) dipasang: dikenali sebagai driver Vulkan "Built-in" (Turnip).
+- GL4ES (ES3) ditambahkan memakai libgl4es_114.so yang sudah ada.
+- libOSMesa.so dan libgl4es_114.so dari zip itu tidak dipasang (lihat pesan).

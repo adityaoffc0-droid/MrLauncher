@@ -48,6 +48,7 @@ import java.util.zip.ZipFile;
  *     <li>mrlauncher.renderer.vulkan: true if the renderer needs Vulkan</li>
  *     <li>mrlauncher.renderer.env: environment as KEY=VALUE pairs separated by ';'</li>
  * </ul>
+ * The Zalith/FCL plugin format is detected as well, see {@link #discoverZalithPlugins}.
  * The plugin must keep android:extractNativeLibs="true" so the library exists on the disk.
  */
 public final class ExternalRendererManager {
@@ -92,6 +93,7 @@ public final class ExternalRendererManager {
             }
         }
         discoverPlugins(context);
+        discoverZalithPlugins(context);
     }
 
     @SuppressWarnings("deprecation")
@@ -129,6 +131,64 @@ public final class ExternalRendererManager {
             String id = "plugin_" + sanitize(app.packageName);
             sRenderers.put(id, new ExternalRenderer(id, name, lib, mesa, gles, vulkan, env,
                     ExternalRenderer.SOURCE_PLUGIN, app.packageName, null));
+        }
+    }
+
+    /**
+     * Detects renderer plugin APKs in the Zalith/FCL format: application meta-data fclPlugin=true,
+     * renderer="Name:glLibrary:eglLibrary" and optional pojavEnv="KEY=VALUE:KEY2=VALUE2"
+     */
+    @SuppressWarnings("deprecation")
+    private static void discoverZalithPlugins(Context context) {
+        PackageManager pm = context.getPackageManager();
+        List<ApplicationInfo> apps;
+        try {
+            apps = pm.getInstalledApplications(PackageManager.GET_META_DATA);
+        } catch (Exception e) {
+            Log.w(TAG, "Installed applications query failed", e);
+            return;
+        }
+        for (ApplicationInfo app : apps) {
+            Bundle meta = app.metaData;
+            if (meta == null || !"true".equalsIgnoreCase(String.valueOf(meta.get("fclPlugin")))) continue;
+            String spec = meta.getString("renderer");
+            if (spec == null) continue;
+            String[] parts = spec.split(":");
+            if (parts.length < 2) continue;
+            String label = parts[0].trim();
+            String glName = parts[1].trim();
+            String eglName = parts.length > 2 ? parts[2].trim() : "libEGL.so";
+            String lower = eglName.toLowerCase(Locale.ROOT);
+            boolean mesa = lower.contains("mesa") || lower.contains("zink");
+            String libName = mesa ? eglName : glName;
+            if (libName.isEmpty() || libName.contains("/") || libName.contains("..")) continue;
+            File lib = new File(app.nativeLibraryDir, libName);
+            if (!lib.isFile()) {
+                Log.w(TAG, app.packageName + " declares " + libName + " but it is not extracted");
+                continue;
+            }
+            String id = "plugin_" + sanitize(app.packageName);
+            if (sRenderers.containsKey(id)) continue;
+            RendererPresets preset = RendererPresets.detect(glName + eglName + label);
+            Map<String, String> env = new HashMap<>(preset.env);
+            parseZalithEnv(meta.getString("pojavEnv"), env);
+            sRenderers.put(id, new ExternalRenderer(id, label.isEmpty() ? app.packageName : label, lib,
+                    mesa, preset.glesVersion, mesa && lower.contains("zink") || preset.vulkan, env,
+                    ExternalRenderer.SOURCE_PLUGIN, app.packageName, null));
+        }
+    }
+
+    private static void parseZalithEnv(String raw, Map<String, String> out) {
+        if (raw == null) return;
+        String lastKey = null;
+        for (String token : raw.split(":")) {
+            int eq = token.indexOf('=');
+            if (eq > 0) {
+                lastKey = token.substring(0, eq).trim();
+                out.put(lastKey, token.substring(eq + 1).trim());
+            } else if (lastKey != null) {
+                out.put(lastKey, out.get(lastKey) + ":" + token);
+            }
         }
     }
 

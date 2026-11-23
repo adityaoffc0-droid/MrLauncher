@@ -1,6 +1,7 @@
 package com.mrlauncher.app.game.renderer;
 
 import static com.mrlauncher.app.game.renderer.def.Renderers.FREEDRENO_RENDERER;
+import static com.mrlauncher.app.game.renderer.def.Renderers.GL4ES3_RENDERER;
 import static com.mrlauncher.app.game.renderer.def.Renderers.GL4ES_RENDERER;
 import static com.mrlauncher.app.game.renderer.def.Renderers.LEGACYZINK_RENDERER;
 import static com.mrlauncher.app.game.renderer.def.Renderers.LTW_RENDERER;
@@ -42,7 +43,7 @@ public class RendererCache {
         ExternalRendererManager.load(context);
         // This is the list that controls em all!
         List<String> renderers = new ArrayList<>(java.util.Arrays.asList(
-                GL4ES_RENDERER, LTW_RENDERER, MOBILEGLUES_RENDERER, ZINK_RENDERER, FREEDRENO_RENDERER, MESA_RENDERER, MESA_RENDERER_EXT, LEGACYZINK_RENDERER
+                GL4ES_RENDERER, GL4ES3_RENDERER, LTW_RENDERER, MOBILEGLUES_RENDERER, ZINK_RENDERER, FREEDRENO_RENDERER, MESA_RENDERER, MESA_RENDERER_EXT, LEGACYZINK_RENDERER
         ));
         for (ExternalRenderer external : ExternalRendererManager.all()) renderers.add(external.tag());
         ArrayList<String> rendererIds = new ArrayList<>(renderers.size());

@@ -1,6 +1,7 @@
 package com.mrlauncher.app.game.renderer;
 
 import static com.mrlauncher.app.game.renderer.def.Renderers.FREEDRENO_RENDERER;
+import static com.mrlauncher.app.game.renderer.def.Renderers.GL4ES3_RENDERER;
 import static com.mrlauncher.app.game.renderer.def.Renderers.GL4ES_RENDERER;
 import static com.mrlauncher.app.game.renderer.def.Renderers.LEGACYZINK_RENDERER;
 import static com.mrlauncher.app.game.renderer.def.Renderers.LTW_RENDERER;
@@ -73,6 +74,7 @@ public class GameRenderer {
             case "opengles2_4":
             case "opengles2_5":
             case GL4ES_RENDERER: return new GLESRenderSpec.GL4ESRenderSpec();
+            case GL4ES3_RENDERER: return new GLESRenderSpec.GL4ES3RenderSpec();
             case LTW_RENDERER: return new GLESRenderSpec.LTWRenderSpec();
             case MOBILEGLUES_RENDERER: return new GLESRenderSpec.MobileGluesRenderSpec();
             case ZINK_RENDERER: return new MesaRenderSpec.ZinkRenderSpec();

@@ -382,4 +382,5 @@
     <string name="renderer_delete_message">%s akan dihapus dari launcher</string>
     <string name="renderer_deleted">Renderer dihapus</string>
     <string name="renderer_plugin_hint">Renderer plugin berasal dari aplikasi terpasang dan tidak bisa dihapus di sini</string>
+    <string name="mcl_setting_renderer_gl4es3">GL4ES (OpenGL ES 3) - eksperimental, semua versi</string>
 </resources>
