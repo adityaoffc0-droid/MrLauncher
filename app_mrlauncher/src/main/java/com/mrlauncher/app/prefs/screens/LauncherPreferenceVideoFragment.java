@@ -16,6 +16,13 @@ import com.mrlauncher.app.R;
 
 import com.mrlauncher.app.contracts.OpenDocumentWithExtension;
 import com.mrlauncher.app.game.renderer.RendererCache;
+import com.mrlauncher.app.game.renderer.ext.ExternalRenderer;
+import com.mrlauncher.app.game.renderer.ext.ExternalRendererManager;
+import com.mrlauncher.app.MrLauncherApplication;
+import android.net.Uri;
+import android.widget.Toast;
+import androidx.appcompat.app.AlertDialog;
+import java.util.List;
 import com.mrlauncher.app.game.renderer.extra.GLESProvider;
 import com.mrlauncher.app.prefs.CustomSeekBarPreference;
 import com.mrlauncher.app.prefs.LauncherPreferences;
@@ -37,6 +44,11 @@ public class LauncherPreferenceVideoFragment extends LauncherPreferenceFragment 
             registerForActivityResult(new OpenDocumentWithExtension("zip"), data -> {
                 if(data != null) DriverInstaller.installDriverFromUri(getContext(), data, this::openDriverDialog);
             });
+    private final ActivityResultLauncher<Object> mImportRenderer =
+            registerForActivityResult(new OpenDocumentWithExtension("so"), data -> {
+                if(data != null) importRenderer(data);
+            });
+
     @Override
     public void onCreatePreferences(Bundle b, String str) {
         addPreferencesFromResource(R.xml.pref_video);
@@ -77,6 +89,15 @@ public class LauncherPreferenceVideoFragment extends LauncherPreferenceFragment 
         RendererCache list = RendererCache.getCompatibleRenderers(getContext());
         rendererListPreference.setEntries(list.rendererDisplayNames);
         rendererListPreference.setEntryValues(list.rendererIds.toArray(new String[0]));
+
+        requirePreference("importRenderer").setOnPreferenceClickListener(pref -> {
+            mImportRenderer.launch(null);
+            return true;
+        });
+        requirePreference("manageRenderers").setOnPreferenceClickListener(pref -> {
+            showRendererManager();
+            return true;
+        });
 
 
         Preference drivers = requirePreference("manageDrivers");
@@ -138,5 +159,76 @@ public class LauncherPreferenceVideoFragment extends LauncherPreferenceFragment 
         else
             preference.setSummary(driver.getName());
         preference.setVisible(true);
+    }
+
+    private void refreshRendererList() {
+        RendererCache.invalidate();
+        RendererCache list = RendererCache.getCompatibleRenderers(requireContext());
+        ListPreference pref = requirePreference("renderer", ListPreference.class);
+        pref.setEntries(list.rendererDisplayNames);
+        pref.setEntryValues(list.rendererIds.toArray(new String[0]));
+        if (!list.rendererIds.contains(pref.getValue())) pref.setValue(list.rendererIds.get(0));
+    }
+
+    private void importRenderer(Uri uri) {
+        android.content.Context appContext = requireContext().getApplicationContext();
+        MrLauncherApplication.sExecutorService.execute(() -> {
+            String message;
+            ExternalRenderer imported = null;
+            try {
+                imported = ExternalRendererManager.importFromUri(appContext, uri);
+                message = appContext.getString(R.string.renderer_import_ok, imported.name);
+            } catch (Exception e) {
+                message = appContext.getString(R.string.renderer_import_failed, e.getMessage());
+            }
+            final String toast = message;
+            final ExternalRenderer result = imported;
+            Activity activity = getActivity();
+            if (activity == null) return;
+            activity.runOnUiThread(() -> {
+                if (!isAdded()) return;
+                Toast.makeText(activity, toast, Toast.LENGTH_LONG).show();
+                refreshRendererList();
+                if (result != null) {
+                    ListPreference pref = requirePreference("renderer", ListPreference.class);
+                    if (pref.findIndexOfValue(result.tag()) >= 0) pref.setValue(result.tag());
+                }
+            });
+        });
+    }
+
+    private void showRendererManager() {
+        ExternalRendererManager.load(requireContext());
+        List<ExternalRenderer> renderers = ExternalRendererManager.all();
+        if (renderers.isEmpty()) {
+            Toast.makeText(requireContext(), R.string.renderer_manage_empty, Toast.LENGTH_LONG).show();
+            return;
+        }
+        String[] items = new String[renderers.size()];
+        for (int i = 0; i < items.length; i++) {
+            ExternalRenderer r = renderers.get(i);
+            items[i] = r.name + " (" + getString(r.isDeletable() ? R.string.renderer_manage_file : R.string.renderer_manage_plugin) + ")";
+        }
+        new AlertDialog.Builder(requireContext())
+                .setTitle(R.string.renderer_manage_title)
+                .setItems(items, (dialog, which) -> {
+                    ExternalRenderer r = renderers.get(which);
+                    if (!r.isDeletable()) {
+                        Toast.makeText(requireContext(), R.string.renderer_plugin_hint, Toast.LENGTH_LONG).show();
+                        return;
+                    }
+                    new AlertDialog.Builder(requireContext())
+                            .setTitle(R.string.renderer_delete_title)
+                            .setMessage(getString(R.string.renderer_delete_message, r.name))
+                            .setPositiveButton(android.R.string.ok, (d, w) -> {
+                                ExternalRendererManager.delete(requireContext(), r);
+                                refreshRendererList();
+                                Toast.makeText(requireContext(), R.string.renderer_deleted, Toast.LENGTH_SHORT).show();
+                            })
+                            .setNegativeButton(android.R.string.cancel, null)
+                            .show();
+                })
+                .setNegativeButton(android.R.string.cancel, null)
+                .show();
     }
 }

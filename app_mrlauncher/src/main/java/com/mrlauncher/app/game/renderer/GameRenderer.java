@@ -6,6 +6,7 @@ import static com.mrlauncher.app.game.renderer.def.Renderers.LEGACYZINK_RENDERER
 import static com.mrlauncher.app.game.renderer.def.Renderers.LTW_RENDERER;
 import static com.mrlauncher.app.game.renderer.def.Renderers.MESA_RENDERER;
 import static com.mrlauncher.app.game.renderer.def.Renderers.MESA_RENDERER_EXT;
+import static com.mrlauncher.app.game.renderer.def.Renderers.MOBILEGLUES_RENDERER;
 import static com.mrlauncher.app.game.renderer.def.Renderers.ZINK_RENDERER;
 
 import android.content.Context;
@@ -15,6 +16,9 @@ import android.util.Log;
 
 import com.mrlauncher.app.Logger;
 import com.mrlauncher.app.Tools;
+import com.mrlauncher.app.game.renderer.ext.ExternalRenderer;
+import com.mrlauncher.app.game.renderer.ext.ExternalRendererManager;
+import com.mrlauncher.app.game.renderer.impl.ExternalRenderSpec;
 import com.mrlauncher.app.game.renderer.impl.GLESRenderSpec;
 import com.mrlauncher.app.game.renderer.impl.MesaRenderSpec;
 import com.mrlauncher.app.prefs.LauncherPreferences;
@@ -70,12 +74,15 @@ public class GameRenderer {
             case "opengles2_5":
             case GL4ES_RENDERER: return new GLESRenderSpec.GL4ESRenderSpec();
             case LTW_RENDERER: return new GLESRenderSpec.LTWRenderSpec();
+            case MOBILEGLUES_RENDERER: return new GLESRenderSpec.MobileGluesRenderSpec();
             case ZINK_RENDERER: return new MesaRenderSpec.ZinkRenderSpec();
             case FREEDRENO_RENDERER: return new MesaRenderSpec.FreedrenoRenderSpec();
             case MESA_RENDERER: return new MesaRenderSpec();
             case MESA_RENDERER_EXT: return new MesaRenderSpec.ExtMesaRenderSpec();
             case LEGACYZINK_RENDERER: return new MesaRenderSpec.LegacyZinkRenderSpec();
             default:
+                ExternalRenderer external = ExternalRendererManager.get(renderer);
+                if (external != null) return ExternalRenderSpec.create(external);
                 Log.e(TAG, "Unknown renderer " + renderer);
                 return null;
         }

@@ -12,6 +12,19 @@
             android:icon="@drawable/ic_px_image_renderer"
             app2:useSimpleSummaryProvider="true"/>
 
+        <Preference
+            android:key="importRenderer"
+            android:persistent="false"
+            android:icon="@drawable/ic_px_image_renderer"
+            android:summary="@string/renderer_import_summary"
+            android:title="@string/renderer_import_title"/>
+        <Preference
+            android:key="manageRenderers"
+            android:persistent="false"
+            android:icon="@drawable/ic_px_image_renderer"
+            android:summary="@string/renderer_manage_summary"
+            android:title="@string/renderer_manage_title"/>
+
         <androidx.preference.SwitchPreferenceCompat
             android:defaultValue="false"
             android:key="ignoreNotch"

@@ -124,6 +124,7 @@ public class GameActivity extends BaseActivity implements ControlButtonMenuListe
             finish();
             return;
         }
+        com.mrlauncher.app.game.renderer.ext.ExternalRendererManager.load(this);
         mGameRenderer = new GameRenderer(instance.getLaunchRenderer());
 
         if(!PREF_ZINK_PREFER_SYSTEM_DRIVER) {

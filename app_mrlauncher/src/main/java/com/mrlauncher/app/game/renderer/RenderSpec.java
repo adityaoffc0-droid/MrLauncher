@@ -31,6 +31,16 @@ public interface RenderSpec {
     int displayName();
 
     /**
+     * Renderer display name as text. Renderers with a dynamic name (imported, plugin) override this
+     *
+     * @param context application context
+     * @return display name
+     */
+    default String displayName(Context context) {
+        return context.getString(displayName());
+    }
+
+    /**
      * Renderer tag
      *
      * @return tag

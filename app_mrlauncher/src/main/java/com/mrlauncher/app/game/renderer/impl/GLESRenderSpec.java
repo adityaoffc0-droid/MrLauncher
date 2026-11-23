@@ -80,4 +80,25 @@ public abstract class GLESRenderSpec implements RenderSpec {
             return 2;
         }
     }
+
+    public static class MobileGluesRenderSpec extends GLESRenderSpec {
+        public boolean compatibleDevice(Context context) {
+            return JREUtils.getDetectedVersion() >= 3 && new File(Tools.NATIVE_LIB_DIR, this.library()).exists();
+        }
+        public String name() {
+            return "MobileGlues";
+        }
+        public int displayName() {
+            return R.string.mcl_setting_renderer_mobileglues;
+        }
+        public String tag() {
+            return Renderers.MOBILEGLUES_RENDERER;
+        }
+        public String library() {
+            return "libmobileglues.so";
+        }
+        protected int glesVersion() {
+            return 3;
+        }
+    }
 }
