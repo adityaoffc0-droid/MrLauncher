@@ -1,4 +1,4 @@
-# MojoLauncher AGENTS policy
+# MJLauncher AGENTS policy
 
 ## Introduction
 
