@@ -28,6 +28,9 @@ public final class ExternalRenderSpec {
         public Gles(ExternalRenderer r) {
             this.r = r;
         }
+        public boolean coreOnly() {
+            return r.coreOnly;
+        }
         public boolean compatibleDevice(Context context) {
             return new File(r.libraryPath).isFile()
                     && (r.glesVersion <= 2 || JREUtils.getDetectedVersion() >= r.glesVersion);

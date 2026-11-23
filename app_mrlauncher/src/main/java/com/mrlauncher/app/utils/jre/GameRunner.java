@@ -1,5 +1,9 @@
 package com.mrlauncher.app.utils.jre;
 
+import com.mrlauncher.app.game.renderer.ext.ExternalRenderer;
+import com.mrlauncher.app.game.renderer.ext.ExternalRendererManager;
+import com.mrlauncher.app.game.renderer.impl.ExternalRenderSpec;
+import java.util.Arrays;
 import android.content.Context;
 import android.util.ArrayMap;
 import android.util.Log;
@@ -119,6 +123,27 @@ public class GameRunner {
         return DateUtils.dateBefore(DateUtils.getOriginalReleaseDate(version), 2025, 1, 7);
     }
 
+    private static boolean isCoreOnlyRenderer(RenderSpec renderer) {
+        if(renderer instanceof GLESRenderSpec.LTWRenderSpec || renderer instanceof GLESRenderSpec.MobileGluesRenderSpec) return true;
+        return renderer instanceof ExternalRenderSpec.Gles && ((ExternalRenderSpec.Gles) renderer).coreOnly();
+    }
+
+    /**
+     * Find a renderer that can run core profile versions: LTW, MobileGlues, plugin/imported GLES 3 renderers, then Mesa based ones
+     */
+    private static RenderSpec findCoreRenderer(AppCompatActivity activity) {
+        List<String> tags = new ArrayList<>(Arrays.asList(Renderers.LTW_RENDERER, Renderers.MOBILEGLUES_RENDERER));
+        List<ExternalRenderer> external = ExternalRendererManager.all();
+        for(ExternalRenderer r : external) if(!r.mesa && r.glesVersion >= 3 && !r.isGl4es()) tags.add(r.tag());
+        tags.addAll(Arrays.asList(Renderers.ZINK_RENDERER, Renderers.FREEDRENO_RENDERER, Renderers.LEGACYZINK_RENDERER));
+        for(ExternalRenderer r : external) if(r.mesa) tags.add(r.tag());
+        for(String tag : tags) {
+            RenderSpec spec = GameRenderer.getKnownRenderer(tag);
+            if(spec != null && spec.compatibleDevice(activity)) return spec;
+        }
+        return null;
+    }
+
     private static boolean isCompatContext(JVersionList.Version version) throws Exception{
         // Day before the release date of 21w10a, the first OpenGL 3 Core Minecraft version
         return DateUtils.dateBefore(DateUtils.getOriginalReleaseDate(version), 2021, 3, 9);
@@ -130,6 +155,14 @@ public class GameRunner {
                         .setCancelable(false)
                         .setPositiveButton(android.R.string.ok, (d, w)->{}));
         return LifecycleAwareAlertDialog.haltOnDialog(activity.getLifecycle(), activity, dialogCreator);
+    }
+
+    /** Pick the dialog text matching why no core renderer (LTW/MobileGlues/...) could be used. */
+    private static int noCoreRendererMessage(int fallback) {
+        if(fallback == 0) return fallback;
+        if(JREUtils.getDetectedVersion() < 3) return R.string.compat_gles3_missing;
+        if(!new File(Tools.NATIVE_LIB_DIR, "libltw.so").exists()) return R.string.compat_ltw_lib_missing;
+        return fallback;
     }
 
     // Autoswitch to provided renderer if supported, otherwise - crash with resId dialog message
@@ -144,7 +177,7 @@ public class GameRunner {
             instance.write();
             gameRenderer.setCurrentRenderer(renderer);
         }else {
-            showDialog(activity, resId);
+            showDialog(activity, noCoreRendererMessage(resId));
             System.exit(0);
         }
     }
@@ -197,13 +230,13 @@ public class GameRunner {
 
         if(!versionInfo.disableRendererChecks) {
             // Switch renderer to GL4ES when running a compat context version on LTW
-            if(isCompatContext(versionInfo) && !hasAngelica(gamedir) && renderer instanceof GLESRenderSpec.LTWRenderSpec) {
+            if(isCompatContext(versionInfo) && !hasAngelica(gamedir) && isCoreOnlyRenderer(renderer)) {
                 switchRendererIfSupported(true, GameRenderer.getKnownRenderer(Renderers.GL4ES_RENDERER), gameRenderer, instance, activity, 0);
             }
 
             boolean isGl4es = renderer instanceof GLESRenderSpec.GL4ESRenderSpec;
-            RenderSpec ltw = GameRenderer.getKnownRenderer(Renderers.LTW_RENDERER);
-            boolean ltwSupported = ltw != null && ltw.compatibleDevice(activity);
+            RenderSpec ltw = findCoreRenderer(activity);
+            boolean ltwSupported = ltw != null;
             // Block Sodium from running with GL4ES on 1.17+
             if(!isCompatContext(versionInfo) && isGl4es && hasSodium(gamedir)) {
                 switchRendererIfSupported(ltwSupported, ltw, gameRenderer, instance, activity, R.string.compat_sodium_not_supported);

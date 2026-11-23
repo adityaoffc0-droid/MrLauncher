@@ -446,8 +446,10 @@
     <string name="bta_installer_untested_versions">Untested BTA versions</string>
     <string name="bta_installer_nightly_versions">Nightly BTA versions</string>
     <string name="newdl_extracting_native_libraries">Extracting native libraries (%d/%d)</string>
-    <string name="compat_version_not_supported">Your device cannot run this version because LTW is not supported on your device.</string>
-    <string name="compat_sodium_not_supported">Your device cannot run Sodium on this version because LTW is not supported on your device.</string>
+    <string name="compat_version_not_supported">Your device cannot run this version because no compatible renderer is available. Install LTW or MobileGlues, or add a renderer plugin.</string>
+    <string name="compat_gles3_missing">This version needs OpenGL ES 3, but your GPU driver only reports OpenGL ES 2. Try enabling ANGLE in the launcher settings, or use a version older than 1.17.</string>
+    <string name="compat_ltw_lib_missing">This build of the launcher does not contain the LTW renderer (libltw.so is missing). Rebuild the app with the LTW aar placed in app_mrlauncher/libs, or install a renderer plugin.</string>
+    <string name="compat_sodium_not_supported">Your device cannot run Sodium on this version because no compatible renderer is available. Install LTW or MobileGlues, or add a renderer plugin.</string>
     <string name="oauth_unknown_error">Unknown authentication error</string>
     <string name="oauth_web_complete">Authenticating…</string>
     <string name="auth_select_microsoft">Microsoft account</string>
@@ -456,6 +458,9 @@
     <string name="littleskin_login_password_hint">Password</string>
     <string name="littleskin_login_failed">LittleSkin login failed: %s</string>
     <string name="auth_select_elyby">Ely.by account</string>
+    <string name="elyby_login_username_hint">Ely.by email / username</string>
+    <string name="elyby_login_password_hint">Password</string>
+    <string name="elyby_login_totp_hint">2FA code (only if enabled)</string>
     <string name="auth_select_local">Local account</string>
     <string name="instance_dir_missing">Instance is missing</string>
     <string name="gamedir_open_failed">Failed to open game directory</string>

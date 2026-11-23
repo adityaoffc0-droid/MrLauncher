@@ -21,6 +21,7 @@ public final class ExternalRenderer {
     public final int source;
     public final String packageName;
     public final File root;
+    public final boolean coreOnly;
 
     public ExternalRenderer(String id, String name, File library, boolean mesa, int glesVersion,
                             boolean vulkan, Map<String, String> env, int source,
@@ -36,6 +37,12 @@ public final class ExternalRenderer {
         this.source = source;
         this.packageName = packageName;
         this.root = root;
+        String lib = library.getName().toLowerCase(java.util.Locale.ROOT);
+        this.coreOnly = lib.contains("mobileglues") || lib.contains("ltw");
+    }
+
+    public boolean isGl4es() {
+        return libraryPath.toLowerCase(java.util.Locale.ROOT).contains("gl4es");
     }
 
     public String tag() {

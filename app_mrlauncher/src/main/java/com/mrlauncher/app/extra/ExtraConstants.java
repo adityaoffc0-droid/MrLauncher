@@ -11,7 +11,7 @@ public class ExtraConstants {
     public static final String MICROSOFT_LOGIN_TODO = "ms_login_done";
     /* ExtraCore constant: Mojang or "local" authentication to perform */
     public static final String MOJANG_LOGIN_TODO = "mojang_login_todo";
-    /* ExtraCore constant: Ely.by authentication to perform */
+    /* ExtraCore constant: Ely.by authentication to perform ("username\npassword\ntotp") */
     public static final String ELYBY_LOGIN_TODO = "elyby_login_done";
     /* ExtraCore constant: LittleSkin authentication to perform ("username\npassword") */
     public static final String LITTLESKIN_LOGIN_TODO = "littleskin_login_todo";

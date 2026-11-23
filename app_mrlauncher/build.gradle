@@ -40,6 +40,10 @@ def getCFApiKey = {
     return "DUMMY"
 }
 
+if(fileTree(dir: 'libs', include: ['*ltw*.aar', '*LTW*.aar']).isEmpty()) {
+    logger.warn('BUILD: No LTW aar found in app_mrlauncher/libs. Versions 1.17+ will fail with "LTW is not supported". See the output-aar artifact of MrLauncher/LTW.')
+}
+
 configurations {
     instrumentedClasspath {
         canBeConsumed = false
@@ -337,7 +341,7 @@ dependencies {
     // https://github.com/PojavLauncherTeam/exp4j
     implementation 'net.sourceforge.htmlcleaner:htmlcleaner:2.29'
 
-    implementation 'com.github.MojoLauncher:alsoft-android-aar:f369161d5f'
+    implementation 'com.github.MrLauncher:alsoft-android-aar:f369161d5f'
 
     implementation project(":glfw:jni_bindings")
     implementation project(":sdl:jni_bindings")

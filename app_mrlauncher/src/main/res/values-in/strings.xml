@@ -383,4 +383,7 @@
     <string name="renderer_deleted">Renderer dihapus</string>
     <string name="renderer_plugin_hint">Renderer plugin berasal dari aplikasi terpasang dan tidak bisa dihapus di sini</string>
     <string name="mcl_setting_renderer_gl4es3">GL4ES (OpenGL ES 3) - eksperimental, semua versi</string>
+    <string name="elyby_login_username_hint">Email / username Ely.by</string>
+    <string name="elyby_login_password_hint">Kata sandi</string>
+    <string name="elyby_login_totp_hint">Kode 2FA (hanya jika diaktifkan)</string>
 </resources>
