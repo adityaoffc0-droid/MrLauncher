@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="control_button_color">#4C2979FF</color>
+    <color name="control_button_pressed_color">#4D000000</color>
+
+    <color name="minebutton_color">#2979FF</color>
+    <color name="minebutton_secondary">#0B1530</color>
+    <color name="background_app">#000000</color>
+    <color name="divider">@color/background_overlay</color>
+    <color name="background_overlay">#12285C</color>
+    <color name="background_status_bar">#000000</color>
+    <color name="background_bottom_bar">#000000</color>
+    <color name="icon_outline_color">#2979FF</color>
+    <color name="accent_blue">#2979FF</color>
+    <color name="accent_blue_dark">#1646B8</color>
+
+    <color name="primary_text">#FFFFFF</color>
+    <color name="secondary_text">#8FB3FF</color>
+
+</resources>
