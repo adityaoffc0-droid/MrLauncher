@@ -6,7 +6,7 @@
 
 # MR Launcher
 
-A launcher Minecraft: Java Edition launcher for Android, based on **MojoLauncher** (and the legacy **PojavLauncher** architecture). Built for stability on modern Android versions, clean UI aesthetics, and seamless custom OpenGL renderer plugin support.
+A launcher Minecraft: Java Edition launcher for Android, based on **MojoLauncher** (and the legacy **PojavLauncher** architecture). Built for stability on modern Android and seamless custom OpenGL renderer plugin support.
 
 Developed by **AditzMods**.
 
