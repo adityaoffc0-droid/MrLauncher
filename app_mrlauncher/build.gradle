@@ -337,7 +337,7 @@ dependencies {
     // https://github.com/PojavLauncherTeam/exp4j
     implementation 'net.sourceforge.htmlcleaner:htmlcleaner:2.29'
 
-    implementation 'com.github.MrLauncher:alsoft-android-aar:f369161d5f'
+    implementation 'com.github.MojoLauncher:alsoft-android-aar:f369161d5f'
 
     implementation project(":glfw:jni_bindings")
     implementation project(":sdl:jni_bindings")
