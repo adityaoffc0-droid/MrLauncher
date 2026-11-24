@@ -386,4 +386,24 @@
     <string name="elyby_login_username_hint">Email / username Ely.by</string>
     <string name="elyby_login_password_hint">Kata sandi</string>
     <string name="elyby_login_totp_hint">Kode 2FA (hanya jika diaktifkan)</string>
+    <string name="preference_appearance_title">Tampilan</string>
+    <string name="preference_appearance_description">Tema dan latar belakang aplikasi</string>
+    <string name="preference_app_theme_title">Tema aplikasi</string>
+    <string name="preference_app_background_title">Latar belakang aplikasi</string>
+    <string name="preference_background_pick_title">Pilih gambar latar belakang</string>
+    <string name="preference_background_pick_description">Pilih gambar dari perangkat untuk latar belakang aplikasi</string>
+    <string name="preference_background_reset_title">Reset latar belakang</string>
+    <string name="preference_background_image_failed">Gambar tidak bisa dimuat</string>
+    <string name="theme_blue">Biru</string>
+    <string name="theme_green">Hijau</string>
+    <string name="theme_red">Merah</string>
+    <string name="theme_purple">Ungu</string>
+    <string name="theme_orange">Oranye</string>
+    <string name="bg_default">Bawaan (hitam)</string>
+    <string name="bg_dark_blue">Biru tua</string>
+    <string name="bg_dark_green">Hijau tua</string>
+    <string name="bg_dark_red">Merah tua</string>
+    <string name="bg_dark_purple">Ungu tua</string>
+    <string name="bg_gray">Abu-abu</string>
+    <string name="bg_image">Gambar sendiri</string>
 </resources>

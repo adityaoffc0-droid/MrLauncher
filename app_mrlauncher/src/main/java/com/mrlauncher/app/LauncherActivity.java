@@ -151,6 +151,11 @@ public class LauncherActivity extends BaseActivity {
     }
 
     @Override
+    protected boolean usesAppBackground() {
+        return true;
+    }
+
+    @Override
     public boolean setFullscreen() {
         return false;
     }

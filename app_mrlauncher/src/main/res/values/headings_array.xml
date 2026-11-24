@@ -37,4 +37,36 @@
         <item>bmclapi</item>
     </string-array>
 
+    <string-array name="app_theme_names">
+        <item>@string/theme_blue</item>
+        <item>@string/theme_green</item>
+        <item>@string/theme_red</item>
+        <item>@string/theme_purple</item>
+        <item>@string/theme_orange</item>
+    </string-array>
+    <string-array name="app_theme_values">
+        <item>blue</item>
+        <item>green</item>
+        <item>red</item>
+        <item>purple</item>
+        <item>orange</item>
+    </string-array>
+    <string-array name="app_background_names">
+        <item>@string/bg_default</item>
+        <item>@string/bg_dark_blue</item>
+        <item>@string/bg_dark_green</item>
+        <item>@string/bg_dark_red</item>
+        <item>@string/bg_dark_purple</item>
+        <item>@string/bg_gray</item>
+        <item>@string/bg_image</item>
+    </string-array>
+    <string-array name="app_background_values">
+        <item>default</item>
+        <item>dark_blue</item>
+        <item>dark_green</item>
+        <item>dark_red</item>
+        <item>dark_purple</item>
+        <item>gray</item>
+        <item>image</item>
+    </string-array>
 </resources>

@@ -78,4 +78,25 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
     </style>
+
+    <style name="MrLauncher.Overlay.Green" parent="">
+        <item name="colorPrimary">#2E9E5B</item>
+        <item name="colorAccent">#2E9E5B</item>
+        <item name="colorButtonNormal">#1B6B3B</item>
+    </style>
+    <style name="MrLauncher.Overlay.Red" parent="">
+        <item name="colorPrimary">#E5484D</item>
+        <item name="colorAccent">#E5484D</item>
+        <item name="colorButtonNormal">#A32A30</item>
+    </style>
+    <style name="MrLauncher.Overlay.Purple" parent="">
+        <item name="colorPrimary">#8E4EC6</item>
+        <item name="colorAccent">#8E4EC6</item>
+        <item name="colorButtonNormal">#5F2F8C</item>
+    </style>
+    <style name="MrLauncher.Overlay.Orange" parent="">
+        <item name="colorPrimary">#F76B15</item>
+        <item name="colorAccent">#F76B15</item>
+        <item name="colorButtonNormal">#B54A0B</item>
+    </style>
 </resources>

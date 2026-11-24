@@ -591,4 +591,24 @@
     <string name="renderer_deleted">Renderer removed</string>
     <string name="renderer_plugin_hint">Plugin renderers come from installed apps and cannot be removed here</string>
     <string name="mcl_setting_renderer_gl4es3">GL4ES (OpenGL ES 3) - experimental, all versions</string>
+    <string name="preference_appearance_title">Appearance</string>
+    <string name="preference_appearance_description">App theme and background</string>
+    <string name="preference_app_theme_title">App theme</string>
+    <string name="preference_app_background_title">App background</string>
+    <string name="preference_background_pick_title">Choose background image</string>
+    <string name="preference_background_pick_description">Pick a picture from your device to use as the app background</string>
+    <string name="preference_background_reset_title">Reset background</string>
+    <string name="preference_background_image_failed">Could not load that image</string>
+    <string name="theme_blue">Blue</string>
+    <string name="theme_green">Green</string>
+    <string name="theme_red">Red</string>
+    <string name="theme_purple">Purple</string>
+    <string name="theme_orange">Orange</string>
+    <string name="bg_default">Default (black)</string>
+    <string name="bg_dark_blue">Dark blue</string>
+    <string name="bg_dark_green">Dark green</string>
+    <string name="bg_dark_red">Dark red</string>
+    <string name="bg_dark_purple">Dark purple</string>
+    <string name="bg_gray">Gray</string>
+    <string name="bg_image">Custom image</string>
 </resources>

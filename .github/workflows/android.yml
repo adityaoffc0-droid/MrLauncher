@@ -19,16 +19,6 @@ jobs:
         with:
           submodules: true
 
-      - name: Get LTW
-        uses: dawidd6/action-download-artifact@v6
-        continue-on-error: true
-        with:
-          repo: MrLauncher/LTW
-          workflow: android.yml
-          workflow_conclusion: success
-          name: output-aar
-          path: app_mrlauncher/libs
-
       - name: Get Mesa
         uses: dawidd6/action-download-artifact@v6  
         continue-on-error: true
@@ -52,10 +42,10 @@ jobs:
           java-version: '17'
       - name: Build LTW
         run: |
-          git clone --recurse-submodules --depth 1 https://github.com/MojoLauncher/LTW ltw_src
           cd ltw_src
           chmod +x gradlew
           ./gradlew :ltw:assembleRelease
+          mkdir -p ../app_mrlauncher/libs
           cp ltw/build/outputs/aar/ltw-release.aar ../app_mrlauncher/libs/ltw.aar
 
       - name: Create out directory
