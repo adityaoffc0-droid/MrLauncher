@@ -91,8 +91,8 @@ public class ClientUI {
         FrameLayout.LayoutParams barLp = new FrameLayout.LayoutParams(
                 ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT,
                 Gravity.TOP | Gravity.START);
-        barLp.leftMargin = dp(8);
-        barLp.topMargin = dp(8);
+        barLp.leftMargin = dp(90);
+        barLp.topMargin = dp(36);
         mRoot.addView(bar, barLp);
         mTopBar = bar;
         bar.setOnTouchListener(this::onBarTouch);
