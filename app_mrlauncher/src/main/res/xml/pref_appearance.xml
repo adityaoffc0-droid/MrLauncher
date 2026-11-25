@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app2="http://schemas.android.com/apk/res-auto">
+
+    <com.mrlauncher.app.prefs.BackButtonPreference />
+
+    <PreferenceCategory android:title="@string/preference_appearance_title">
+        <androidx.preference.ListPreference
+            android:defaultValue="blue"
+            android:icon="@drawable/ic_px_image"
+            android:key="appTheme"
+            android:entries="@array/app_theme_names"
+            android:entryValues="@array/app_theme_values"
+            android:title="@string/preference_app_theme_title"
+            app2:useSimpleSummaryProvider="true" />
+
+        <androidx.preference.ListPreference
+            android:defaultValue="default"
+            android:icon="@drawable/ic_px_image"
+            android:key="appBackground"
+            android:entries="@array/app_background_names"
+            android:entryValues="@array/app_background_values"
+            android:title="@string/preference_app_background_title"
+            app2:useSimpleSummaryProvider="true" />
+
+        <Preference
+            android:icon="@drawable/ic_px_image"
+            android:key="appBackgroundPick"
+            android:title="@string/preference_background_pick_title"
+            android:summary="@string/preference_background_pick_description" />
+
+        <Preference
+            android:icon="@drawable/ic_px_image"
+            android:key="appBackgroundReset"
+            android:title="@string/preference_background_reset_title" />
+    </PreferenceCategory>
+</PreferenceScreen>
