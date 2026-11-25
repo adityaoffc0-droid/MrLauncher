@@ -215,7 +215,7 @@ public class GameActivity extends BaseActivity implements ControlButtonMenuListe
         MCOptionUtils.MCOptionListener optionListener = MCOptionUtils::getMcScale;
         MCOptionUtils.addMCOptionListener(optionListener);
         mControlLayout.setModifiable(false);
-        mClientUI = new ClientUI(this, mControlLayout);
+//        mClientUI = new ClientUI(this, mControlLayout);
 
         // Set the activity for the executor. Must do this here, or else Tools.showErrorRemote() may not
         // execute the correct method
