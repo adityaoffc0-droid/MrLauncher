@@ -71,6 +71,7 @@ public final class AdGate {
 
     private static void loadAndShow(Activity activity, AlertDialog dialog, Button watch, Callback callback) {
         try {
+        StartAppSDK.setTestAdsEnabled(true);
             StartAppSDK.init(activity, START_IO_APP_ID, false);
         } catch (Throwable t) {
             fail(activity, watch, "Ads failed to start");
