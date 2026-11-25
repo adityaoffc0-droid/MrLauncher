@@ -167,8 +167,7 @@ public class ClientUI {
 
     private void updateTitle() {
         if (mTitle == null) return;
-        mTitle.setText(AdGate.isUnlocked(mActivity)
-                ? "Client (" + AdGate.worldsLeft(mActivity) + " worlds left)" : "Client");
+        mTitle.setText("Client");
     }
 
     public void onResume() {
