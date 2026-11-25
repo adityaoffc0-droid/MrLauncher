@@ -30,6 +30,7 @@ public final class AdGate {
     public interface Callback { void onUnlocked(); }
 
     public static boolean isUnlocked(Context context) {
+        if (true) return true;
         return prefs(context).getBoolean(KEY_UNLOCKED, false);
     }
 
@@ -87,7 +88,7 @@ public final class AdGate {
                 rewarded[0] = true;
                 prefs(activity).edit().putBoolean(KEY_UNLOCKED, true).putInt(KEY_WORLDS, 0).apply();
                 activity.runOnUiThread(() -> {
-                    Toast.makeText(activity, "Unlocked", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(activity, "Unlocked", Toast.LENGTH_LONG).show();
                     callback.onUnlocked();
                 });
             }
@@ -104,13 +105,13 @@ public final class AdGate {
 
             @Override
             public void onFailedToReceiveAd(Ad failed) {
-                activity.runOnUiThread(() -> fail(activity, watch, "Ad not available, try again"));
+                activity.runOnUiThread(() -> fail(activity, watch, "Ad failed: " + failed.getErrorMessage()));
             }
         });
     }
 
     private static void fail(Activity activity, Button watch, String message) {
-        Toast.makeText(activity, message, Toast.LENGTH_SHORT).show();
+        Toast.makeText(activity, message, Toast.LENGTH_LONG).show();
         watch.setEnabled(true);
         watch.setText("Watch Ads");
     }
