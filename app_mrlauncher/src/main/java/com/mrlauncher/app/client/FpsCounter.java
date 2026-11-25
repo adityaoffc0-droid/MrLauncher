@@ -12,7 +12,6 @@ public final class FpsCounter {
     private static volatile int sGameFrames = 0;
     private static volatile boolean sGameFrameSeen = false;
 
-    private FpsCounter() {}
 
     public static void onGameFrame() {
         sGameFrameSeen = true;
