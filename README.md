@@ -1,4 +1,4 @@
-# MrLauncher
+# Creditss
 
 > **Credits:** MrLauncher is a modified version of [MojoLauncher](https://github.com/MojoLauncher) by artdeell and the MojoLauncher contributors, licensed under the original license (see `LICENSE`). All credit for the original work goes to them.
 
